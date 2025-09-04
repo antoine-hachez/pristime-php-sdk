@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Model;
+namespace PristimeSdk\Model;
 
 use \ArrayAccess;
 use \PristimeSdk\ObjectSerializer;
@@ -59,7 +59,7 @@ class Durations implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'provided' => '\PristimeSdk\PristimeSdk\Model\ProvidedShiftsDurations',
+        'provided' => '\PristimeSdk\Model\ProvidedShiftsDurations',
         'created' => 'int'
     ];
 
@@ -307,7 +307,7 @@ class Durations implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets provided
      *
-     * @return \PristimeSdk\PristimeSdk\Model\ProvidedShiftsDurations
+     * @return \PristimeSdk\Model\ProvidedShiftsDurations
      */
     public function getProvided()
     {
@@ -317,7 +317,7 @@ class Durations implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets provided
      *
-     * @param \PristimeSdk\PristimeSdk\Model\ProvidedShiftsDurations $provided provided
+     * @param \PristimeSdk\Model\ProvidedShiftsDurations $provided provided
      *
      * @return self
      */

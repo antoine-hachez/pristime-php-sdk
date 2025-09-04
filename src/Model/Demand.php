@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Model;
+namespace PristimeSdk\Model;
 
 use \ArrayAccess;
 use \PristimeSdk\ObjectSerializer;
@@ -67,7 +67,7 @@ class Demand implements ModelInterface, ArrayAccess, \JsonSerializable
         'time_series' => 'array<string,float>',
         'upper_limit_increment' => 'int',
         'revenues' => 'object',
-        'shift_creation_settings' => '\PristimeSdk\PristimeSdk\Model\ShiftCreationSettings'
+        'shift_creation_settings' => '\PristimeSdk\Model\ShiftCreationSettings'
     ];
 
     /**
@@ -596,7 +596,7 @@ class Demand implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shift_creation_settings
      *
-     * @return \PristimeSdk\PristimeSdk\Model\ShiftCreationSettings|null
+     * @return \PristimeSdk\Model\ShiftCreationSettings|null
      */
     public function getShiftCreationSettings()
     {
@@ -606,7 +606,7 @@ class Demand implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shift_creation_settings
      *
-     * @param \PristimeSdk\PristimeSdk\Model\ShiftCreationSettings|null $shift_creation_settings shift_creation_settings
+     * @param \PristimeSdk\Model\ShiftCreationSettings|null $shift_creation_settings shift_creation_settings
      *
      * @return self
      */

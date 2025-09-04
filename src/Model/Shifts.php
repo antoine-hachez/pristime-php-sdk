@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Model;
+namespace PristimeSdk\Model;
 
 use \ArrayAccess;
 use \PristimeSdk\ObjectSerializer;
@@ -59,8 +59,8 @@ class Shifts implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'provided' => 'array<string,\PristimeSdk\PristimeSdk\Model\ShiftAssignmentResult>',
-        'created' => '\PristimeSdk\PristimeSdk\Model\Shift[]'
+        'provided' => 'array<string,\PristimeSdk\Model\ShiftAssignmentResult>',
+        'created' => '\PristimeSdk\Model\Shift[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class Shifts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets provided
      *
-     * @return array<string,\PristimeSdk\PristimeSdk\Model\ShiftAssignmentResult>
+     * @return array<string,\PristimeSdk\Model\ShiftAssignmentResult>
      */
     public function getProvided()
     {
@@ -317,7 +317,7 @@ class Shifts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets provided
      *
-     * @param array<string,\PristimeSdk\PristimeSdk\Model\ShiftAssignmentResult> $provided Assignment results for shifts you provided in the request, keyed by your original shift IDs. Shows which worker (if any) is now assigned to each existing shift.
+     * @param array<string,\PristimeSdk\Model\ShiftAssignmentResult> $provided Assignment results for shifts you provided in the request, keyed by your original shift IDs. Shows which worker (if any) is now assigned to each existing shift.
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class Shifts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets created
      *
-     * @return \PristimeSdk\PristimeSdk\Model\Shift[]
+     * @return \PristimeSdk\Model\Shift[]
      */
     public function getCreated()
     {
@@ -344,7 +344,7 @@ class Shifts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets created
      *
-     * @param \PristimeSdk\PristimeSdk\Model\Shift[] $created New shifts automatically created by the optimization algorithm to meet staffing demands. These are additional shifts beyond what you originally provided, always with assigned workers.
+     * @param \PristimeSdk\Model\Shift[] $created New shifts automatically created by the optimization algorithm to meet staffing demands. These are additional shifts beyond what you originally provided, always with assigned workers.
      *
      * @return self
      */

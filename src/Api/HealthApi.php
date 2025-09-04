@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Api;
+namespace PristimeSdk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -135,7 +135,7 @@ class HealthApi
      *
      * @throws \PristimeSdk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \PristimeSdk\PristimeSdk\Model\Response
+     * @return \PristimeSdk\Model\Response
      */
     public function healthCheck(string $contentType = self::contentTypes['healthCheck'][0])
     {
@@ -152,7 +152,7 @@ class HealthApi
      *
      * @throws \PristimeSdk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \PristimeSdk\PristimeSdk\Model\Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PristimeSdk\Model\Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function healthCheckWithHttpInfo(string $contentType = self::contentTypes['healthCheck'][0])
     {
@@ -184,7 +184,7 @@ class HealthApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\PristimeSdk\PristimeSdk\Model\Response',
+                        '\PristimeSdk\Model\Response',
                         $request,
                         $response,
                     );
@@ -206,7 +206,7 @@ class HealthApi
             }
 
             return $this->handleResponseWithDataType(
-                '\PristimeSdk\PristimeSdk\Model\Response',
+                '\PristimeSdk\Model\Response',
                 $request,
                 $response,
             );
@@ -215,7 +215,7 @@ class HealthApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimeSdk\PristimeSdk\Model\Response',
+                        '\PristimeSdk\Model\Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -259,7 +259,7 @@ class HealthApi
      */
     public function healthCheckAsyncWithHttpInfo(string $contentType = self::contentTypes['healthCheck'][0])
     {
-        $returnType = '\PristimeSdk\PristimeSdk\Model\Response';
+        $returnType = '\PristimeSdk\Model\Response';
         $request = $this->healthCheckRequest($contentType);
 
         return $this->client

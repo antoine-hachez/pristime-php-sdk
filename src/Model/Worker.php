@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Model;
+namespace PristimeSdk\Model;
 
 use \ArrayAccess;
 use \PristimeSdk\ObjectSerializer;
@@ -61,13 +61,13 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'name' => 'string',
-        'min_break_duration' => '\PristimeSdk\PristimeSdk\Model\MinBreakDuration',
-        'max_consecutive_workdays' => '\PristimeSdk\PristimeSdk\Model\MaxConsecutiveWorkdays',
-        'balances' => '\PristimeSdk\PristimeSdk\Model\Balances',
-        'periods' => '\PristimeSdk\PristimeSdk\Model\PeriodContract[]',
-        'availability' => '\PristimeSdk\PristimeSdk\Model\Availability',
-        'costs' => '\PristimeSdk\PristimeSdk\Model\WorkerCost',
-        'revenues' => '\PristimeSdk\PristimeSdk\Model\WorkerRevenue'
+        'min_break_duration' => '\PristimeSdk\Model\MinBreakDuration',
+        'max_consecutive_workdays' => '\PristimeSdk\Model\MaxConsecutiveWorkdays',
+        'balances' => '\PristimeSdk\Model\Balances',
+        'periods' => '\PristimeSdk\Model\PeriodContract[]',
+        'availability' => '\PristimeSdk\Model\Availability',
+        'costs' => '\PristimeSdk\Model\WorkerCost',
+        'revenues' => '\PristimeSdk\Model\WorkerRevenue'
     ];
 
     /**
@@ -410,7 +410,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets min_break_duration
      *
-     * @return \PristimeSdk\PristimeSdk\Model\MinBreakDuration|null
+     * @return \PristimeSdk\Model\MinBreakDuration|null
      */
     public function getMinBreakDuration()
     {
@@ -420,7 +420,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets min_break_duration
      *
-     * @param \PristimeSdk\PristimeSdk\Model\MinBreakDuration|null $min_break_duration min_break_duration
+     * @param \PristimeSdk\Model\MinBreakDuration|null $min_break_duration min_break_duration
      *
      * @return self
      */
@@ -437,7 +437,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets max_consecutive_workdays
      *
-     * @return \PristimeSdk\PristimeSdk\Model\MaxConsecutiveWorkdays|null
+     * @return \PristimeSdk\Model\MaxConsecutiveWorkdays|null
      */
     public function getMaxConsecutiveWorkdays()
     {
@@ -447,7 +447,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets max_consecutive_workdays
      *
-     * @param \PristimeSdk\PristimeSdk\Model\MaxConsecutiveWorkdays|null $max_consecutive_workdays max_consecutive_workdays
+     * @param \PristimeSdk\Model\MaxConsecutiveWorkdays|null $max_consecutive_workdays max_consecutive_workdays
      *
      * @return self
      */
@@ -464,7 +464,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets balances
      *
-     * @return \PristimeSdk\PristimeSdk\Model\Balances|null
+     * @return \PristimeSdk\Model\Balances|null
      */
     public function getBalances()
     {
@@ -474,7 +474,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets balances
      *
-     * @param \PristimeSdk\PristimeSdk\Model\Balances|null $balances balances
+     * @param \PristimeSdk\Model\Balances|null $balances balances
      *
      * @return self
      */
@@ -491,7 +491,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets periods
      *
-     * @return \PristimeSdk\PristimeSdk\Model\PeriodContract[]|null
+     * @return \PristimeSdk\Model\PeriodContract[]|null
      */
     public function getPeriods()
     {
@@ -501,7 +501,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets periods
      *
-     * @param \PristimeSdk\PristimeSdk\Model\PeriodContract[]|null $periods Contract periods defining work expectations, time limits, and labor rules for different date ranges.
+     * @param \PristimeSdk\Model\PeriodContract[]|null $periods Contract periods defining work expectations, time limits, and labor rules for different date ranges.
      *
      * @return self
      */
@@ -518,7 +518,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets availability
      *
-     * @return \PristimeSdk\PristimeSdk\Model\Availability|null
+     * @return \PristimeSdk\Model\Availability|null
      */
     public function getAvailability()
     {
@@ -528,7 +528,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets availability
      *
-     * @param \PristimeSdk\PristimeSdk\Model\Availability|null $availability availability
+     * @param \PristimeSdk\Model\Availability|null $availability availability
      *
      * @return self
      */
@@ -545,7 +545,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets costs
      *
-     * @return \PristimeSdk\PristimeSdk\Model\WorkerCost|null
+     * @return \PristimeSdk\Model\WorkerCost|null
      */
     public function getCosts()
     {
@@ -555,7 +555,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets costs
      *
-     * @param \PristimeSdk\PristimeSdk\Model\WorkerCost|null $costs costs
+     * @param \PristimeSdk\Model\WorkerCost|null $costs costs
      *
      * @return self
      */
@@ -572,7 +572,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets revenues
      *
-     * @return \PristimeSdk\PristimeSdk\Model\WorkerRevenue|null
+     * @return \PristimeSdk\Model\WorkerRevenue|null
      */
     public function getRevenues()
     {
@@ -582,7 +582,7 @@ class Worker implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets revenues
      *
-     * @param \PristimeSdk\PristimeSdk\Model\WorkerRevenue|null $revenues revenues
+     * @param \PristimeSdk\Model\WorkerRevenue|null $revenues revenues
      *
      * @return self
      */

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Model;
+namespace PristimeSdk\Model;
 
 use \ArrayAccess;
 use \PristimeSdk\ObjectSerializer;
@@ -64,12 +64,12 @@ class Shift implements ModelInterface, ArrayAccess, \JsonSerializable
         'timezone' => 'string',
         'id' => 'string',
         'label' => 'string',
-        'revenues' => '\PristimeSdk\PristimeSdk\Model\ShiftRevenues',
+        'revenues' => '\PristimeSdk\Model\ShiftRevenues',
         'revenue' => 'int',
-        'breaks' => '\PristimeSdk\PristimeSdk\Model\Period[]',
+        'breaks' => '\PristimeSdk\Model\Period[]',
         'tags' => 'string[]',
         'required_skills' => 'string[]',
-        'assignment' => '\PristimeSdk\PristimeSdk\Model\ShiftAssignment',
+        'assignment' => '\PristimeSdk\Model\ShiftAssignment',
         'preceding_shift_id' => 'string'
     ];
 
@@ -529,7 +529,7 @@ class Shift implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets revenues
      *
-     * @return \PristimeSdk\PristimeSdk\Model\ShiftRevenues|null
+     * @return \PristimeSdk\Model\ShiftRevenues|null
      */
     public function getRevenues()
     {
@@ -539,7 +539,7 @@ class Shift implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets revenues
      *
-     * @param \PristimeSdk\PristimeSdk\Model\ShiftRevenues|null $revenues revenues
+     * @param \PristimeSdk\Model\ShiftRevenues|null $revenues revenues
      *
      * @return self
      */
@@ -583,7 +583,7 @@ class Shift implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets breaks
      *
-     * @return \PristimeSdk\PristimeSdk\Model\Period[]|null
+     * @return \PristimeSdk\Model\Period[]|null
      */
     public function getBreaks()
     {
@@ -593,7 +593,7 @@ class Shift implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets breaks
      *
-     * @param \PristimeSdk\PristimeSdk\Model\Period[]|null $breaks Unpaid break periods during the shift (lunch, rest breaks). Breaks are subtracted from total shift duration to calculate actual work time. Must be entirely within the shift timeframe.
+     * @param \PristimeSdk\Model\Period[]|null $breaks Unpaid break periods during the shift (lunch, rest breaks). Breaks are subtracted from total shift duration to calculate actual work time. Must be entirely within the shift timeframe.
      *
      * @return self
      */
@@ -668,7 +668,7 @@ class Shift implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets assignment
      *
-     * @return \PristimeSdk\PristimeSdk\Model\ShiftAssignment|null
+     * @return \PristimeSdk\Model\ShiftAssignment|null
      */
     public function getAssignment()
     {
@@ -678,7 +678,7 @@ class Shift implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets assignment
      *
-     * @param \PristimeSdk\PristimeSdk\Model\ShiftAssignment|null $assignment assignment
+     * @param \PristimeSdk\Model\ShiftAssignment|null $assignment assignment
      *
      * @return self
      */

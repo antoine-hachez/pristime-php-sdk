@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Model;
+namespace PristimeSdk\Model;
 
 use \ArrayAccess;
 use \PristimeSdk\ObjectSerializer;
@@ -61,8 +61,8 @@ class ShiftCreationSettings implements ModelInterface, ArrayAccess, \JsonSeriali
     protected static $openAPITypes = [
         'timezone' => 'string',
         'break_minutes' => 'int',
-        'work_duration' => '\PristimeSdk\PristimeSdk\Model\WorkDuration',
-        'continuous_work_duration_before_break' => '\PristimeSdk\PristimeSdk\Model\ContinuousWorkDurationBeforeBreak',
+        'work_duration' => '\PristimeSdk\Model\WorkDuration',
+        'continuous_work_duration_before_break' => '\PristimeSdk\Model\ContinuousWorkDurationBeforeBreak',
         'required_skills' => 'string[]',
         'tags' => 'string[]',
         'day_boundary_offset_minutes' => 'int'
@@ -436,7 +436,7 @@ class ShiftCreationSettings implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets work_duration
      *
-     * @return \PristimeSdk\PristimeSdk\Model\WorkDuration
+     * @return \PristimeSdk\Model\WorkDuration
      */
     public function getWorkDuration()
     {
@@ -446,7 +446,7 @@ class ShiftCreationSettings implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets work_duration
      *
-     * @param \PristimeSdk\PristimeSdk\Model\WorkDuration $work_duration work_duration
+     * @param \PristimeSdk\Model\WorkDuration $work_duration work_duration
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class ShiftCreationSettings implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets continuous_work_duration_before_break
      *
-     * @return \PristimeSdk\PristimeSdk\Model\ContinuousWorkDurationBeforeBreak
+     * @return \PristimeSdk\Model\ContinuousWorkDurationBeforeBreak
      */
     public function getContinuousWorkDurationBeforeBreak()
     {
@@ -473,7 +473,7 @@ class ShiftCreationSettings implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets continuous_work_duration_before_break
      *
-     * @param \PristimeSdk\PristimeSdk\Model\ContinuousWorkDurationBeforeBreak $continuous_work_duration_before_break continuous_work_duration_before_break
+     * @param \PristimeSdk\Model\ContinuousWorkDurationBeforeBreak $continuous_work_duration_before_break continuous_work_duration_before_break
      *
      * @return self
      */

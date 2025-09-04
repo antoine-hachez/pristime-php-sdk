@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Model;
+namespace PristimeSdk\Model;
 
 use \ArrayAccess;
 use \PristimeSdk\ObjectSerializer;
@@ -62,7 +62,7 @@ class ScheduleJobResponse implements ModelInterface, ArrayAccess, \JsonSerializa
         'schedule_job_id' => 'string',
         'status' => 'string',
         'message' => 'string',
-        'result' => '\PristimeSdk\PristimeSdk\Model\ScheduleJobResult'
+        'result' => '\PristimeSdk\Model\ScheduleJobResult'
     ];
 
     /**
@@ -409,7 +409,7 @@ class ScheduleJobResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets result
      *
-     * @return \PristimeSdk\PristimeSdk\Model\ScheduleJobResult|null
+     * @return \PristimeSdk\Model\ScheduleJobResult|null
      */
     public function getResult()
     {
@@ -419,7 +419,7 @@ class ScheduleJobResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets result
      *
-     * @param \PristimeSdk\PristimeSdk\Model\ScheduleJobResult|null $result result
+     * @param \PristimeSdk\Model\ScheduleJobResult|null $result result
      *
      * @return self
      */

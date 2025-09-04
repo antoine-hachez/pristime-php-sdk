@@ -9,12 +9,12 @@ Name | Type | Description | Notes
 **timezone** | **string** | Timezone for interpreting start_datetime and end_datetime |
 **id** | **string** |  | [optional]
 **label** | **string** |  | [optional]
-**revenues** | [**\PristimeSdk\PristimeSdk\Model\ShiftRevenues**](ShiftRevenues.md) |  | [optional]
+**revenues** | [**\PristimeSdk\Model\ShiftRevenues**](ShiftRevenues.md) |  | [optional]
 **revenue** | **int** | Additional fixed revenue value for this specific shift, added to calculated hourly revenues. | [optional] [default to 0]
-**breaks** | [**\PristimeSdk\PristimeSdk\Model\Period[]**](Period.md) | Unpaid break periods during the shift (lunch, rest breaks). Breaks are subtracted from total shift duration to calculate actual work time. Must be entirely within the shift timeframe. | [optional]
+**breaks** | [**\PristimeSdk\Model\Period[]**](Period.md) | Unpaid break periods during the shift (lunch, rest breaks). Breaks are subtracted from total shift duration to calculate actual work time. Must be entirely within the shift timeframe. | [optional]
 **tags** | **string[]** | Descriptive labels for the shift type, location, or characteristics. Used to match shifts with demand requirements. | [optional]
 **required_skills** | **string[]** | Skills, certifications, or qualifications that a worker must possess to be assigned to this shift. Workers without these skills will be ineligible. | [optional]
-**assignment** | [**\PristimeSdk\PristimeSdk\Model\ShiftAssignment**](ShiftAssignment.md) |  | [optional]
+**assignment** | [**\PristimeSdk\Model\ShiftAssignment**](ShiftAssignment.md) |  | [optional]
 **preceding_shift_id** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

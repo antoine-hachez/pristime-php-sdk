@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **time_series** | **array<string,float>** | Staffing level requirements over time as change points. Each entry specifies when the required number of workers changes. Format: {timestamp: worker_count}. The last entry must be 0 to indicate demand end. | [optional]
 **upper_limit_increment** | **int** |  | [optional]
 **revenues** | **object** |  | [optional]
-**shift_creation_settings** | [**\PristimeSdk\PristimeSdk\Model\ShiftCreationSettings**](ShiftCreationSettings.md) |  | [optional]
+**shift_creation_settings** | [**\PristimeSdk\Model\ShiftCreationSettings**](ShiftCreationSettings.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Model;
+namespace PristimeSdk\Model;
 
 use \ArrayAccess;
 use \PristimeSdk\ObjectSerializer;
@@ -61,10 +61,10 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
-        'time_constraints' => '\PristimeSdk\PristimeSdk\Model\PeriodTimeConstraints',
-        'day_constraints' => '\PristimeSdk\PristimeSdk\Model\PeriodDayConstraints',
-        'days' => 'array<string,\PristimeSdk\PristimeSdk\Model\DayContract>',
-        'costs' => '\PristimeSdk\PristimeSdk\Model\PeriodCosts',
+        'time_constraints' => '\PristimeSdk\Model\PeriodTimeConstraints',
+        'day_constraints' => '\PristimeSdk\Model\PeriodDayConstraints',
+        'days' => 'array<string,\PristimeSdk\Model\DayContract>',
+        'costs' => '\PristimeSdk\Model\PeriodCosts',
         'flextime_factor' => 'int'
     ];
 
@@ -396,7 +396,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets time_constraints
      *
-     * @return \PristimeSdk\PristimeSdk\Model\PeriodTimeConstraints|null
+     * @return \PristimeSdk\Model\PeriodTimeConstraints|null
      */
     public function getTimeConstraints()
     {
@@ -406,7 +406,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets time_constraints
      *
-     * @param \PristimeSdk\PristimeSdk\Model\PeriodTimeConstraints|null $time_constraints time_constraints
+     * @param \PristimeSdk\Model\PeriodTimeConstraints|null $time_constraints time_constraints
      *
      * @return self
      */
@@ -423,7 +423,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets day_constraints
      *
-     * @return \PristimeSdk\PristimeSdk\Model\PeriodDayConstraints|null
+     * @return \PristimeSdk\Model\PeriodDayConstraints|null
      */
     public function getDayConstraints()
     {
@@ -433,7 +433,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets day_constraints
      *
-     * @param \PristimeSdk\PristimeSdk\Model\PeriodDayConstraints|null $day_constraints day_constraints
+     * @param \PristimeSdk\Model\PeriodDayConstraints|null $day_constraints day_constraints
      *
      * @return self
      */
@@ -450,7 +450,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets days
      *
-     * @return array<string,\PristimeSdk\PristimeSdk\Model\DayContract>|null
+     * @return array<string,\PristimeSdk\Model\DayContract>|null
      */
     public function getDays()
     {
@@ -460,7 +460,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets days
      *
-     * @param array<string,\PristimeSdk\PristimeSdk\Model\DayContract>|null $days days
+     * @param array<string,\PristimeSdk\Model\DayContract>|null $days days
      *
      * @return self
      */
@@ -477,7 +477,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets costs
      *
-     * @return \PristimeSdk\PristimeSdk\Model\PeriodCosts|null
+     * @return \PristimeSdk\Model\PeriodCosts|null
      */
     public function getCosts()
     {
@@ -487,7 +487,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets costs
      *
-     * @param \PristimeSdk\PristimeSdk\Model\PeriodCosts|null $costs costs
+     * @param \PristimeSdk\Model\PeriodCosts|null $costs costs
      *
      * @return self
      */

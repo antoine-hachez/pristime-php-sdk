@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Model;
+namespace PristimeSdk\Model;
 
 use \ArrayAccess;
 use \PristimeSdk\ObjectSerializer;
@@ -59,8 +59,8 @@ class Balances implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'overtime_balance' => '\PristimeSdk\PristimeSdk\Model\Balance',
-        'flextime_balance' => '\PristimeSdk\PristimeSdk\Model\Balance'
+        'overtime_balance' => '\PristimeSdk\Model\Balance',
+        'flextime_balance' => '\PristimeSdk\Model\Balance'
     ];
 
     /**
@@ -307,7 +307,7 @@ class Balances implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets overtime_balance
      *
-     * @return \PristimeSdk\PristimeSdk\Model\Balance
+     * @return \PristimeSdk\Model\Balance
      */
     public function getOvertimeBalance()
     {
@@ -317,7 +317,7 @@ class Balances implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets overtime_balance
      *
-     * @param \PristimeSdk\PristimeSdk\Model\Balance $overtime_balance overtime_balance
+     * @param \PristimeSdk\Model\Balance $overtime_balance overtime_balance
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class Balances implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets flextime_balance
      *
-     * @return \PristimeSdk\PristimeSdk\Model\Balance
+     * @return \PristimeSdk\Model\Balance
      */
     public function getFlextimeBalance()
     {
@@ -344,7 +344,7 @@ class Balances implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets flextime_balance
      *
-     * @param \PristimeSdk\PristimeSdk\Model\Balance $flextime_balance flextime_balance
+     * @param \PristimeSdk\Model\Balance $flextime_balance flextime_balance
      *
      * @return self
      */

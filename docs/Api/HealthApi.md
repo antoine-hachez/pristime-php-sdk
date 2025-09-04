@@ -10,7 +10,7 @@ All URIs are relative to https://pristime.com, except if the operation defines a
 ## `healthCheck()`
 
 ```php
-healthCheck(): \PristimeSdk\PristimeSdk\Model\Response
+healthCheck(): \PristimeSdk\Model\Response
 ```
 
 Read Health
@@ -43,7 +43,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\PristimeSdk\PristimeSdk\Model\Response**](../Model/Response.md)
+[**\PristimeSdk\Model\Response**](../Model/Response.md)
 
 ### Authorization
 

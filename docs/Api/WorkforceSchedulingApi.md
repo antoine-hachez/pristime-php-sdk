@@ -11,7 +11,7 @@ All URIs are relative to https://pristime.com, except if the operation defines a
 ## `createScheduleJob()`
 
 ```php
-createScheduleJob($schedule_state): \PristimeSdk\PristimeSdk\Model\ScheduleJobResponse
+createScheduleJob($schedule_state): \PristimeSdk\Model\ScheduleJobResponse
 ```
 
 Create Workforce Schedule Optimization Job
@@ -37,7 +37,7 @@ $apiInstance = new PristimeSdk\Api\WorkforceSchedulingApi(
     new GuzzleHttp\Client(),
     $config
 );
-$schedule_state = new \PristimeSdk\PristimeSdk\Model\ScheduleState(); // \PristimeSdk\PristimeSdk\Model\ScheduleState
+$schedule_state = new \PristimeSdk\Model\ScheduleState(); // \PristimeSdk\Model\ScheduleState
 
 try {
     $result = $apiInstance->createScheduleJob($schedule_state);
@@ -51,11 +51,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **schedule_state** | [**\PristimeSdk\PristimeSdk\Model\ScheduleState**](../Model/ScheduleState.md)|  | |
+| **schedule_state** | [**\PristimeSdk\Model\ScheduleState**](../Model/ScheduleState.md)|  | |
 
 ### Return type
 
-[**\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse**](../Model/ScheduleJobResponse.md)
+[**\PristimeSdk\Model\ScheduleJobResponse**](../Model/ScheduleJobResponse.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ try {
 ## `getScheduleJob()`
 
 ```php
-getScheduleJob($job_id): \PristimeSdk\PristimeSdk\Model\ScheduleJobResponse
+getScheduleJob($job_id): \PristimeSdk\Model\ScheduleJobResponse
 ```
 
 Get Scheduling Job Status and Results
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse**](../Model/ScheduleJobResponse.md)
+[**\PristimeSdk\Model\ScheduleJobResponse**](../Model/ScheduleJobResponse.md)
 
 ### Authorization
 

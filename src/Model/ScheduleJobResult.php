@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimeSdk\PristimeSdk\Model;
+namespace PristimeSdk\Model;
 
 use \ArrayAccess;
 use \PristimeSdk\ObjectSerializer;
@@ -59,10 +59,10 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shifts' => '\PristimeSdk\PristimeSdk\Model\Shifts',
-        'durations' => '\PristimeSdk\PristimeSdk\Model\Durations',
-        'metrics' => '\PristimeSdk\PristimeSdk\Model\Metrics',
-        'broken_constraints' => '\PristimeSdk\PristimeSdk\Model\BrokenConstraints'
+        'shifts' => '\PristimeSdk\Model\Shifts',
+        'durations' => '\PristimeSdk\Model\Durations',
+        'metrics' => '\PristimeSdk\Model\Metrics',
+        'broken_constraints' => '\PristimeSdk\Model\BrokenConstraints'
     ];
 
     /**
@@ -321,7 +321,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets shifts
      *
-     * @return \PristimeSdk\PristimeSdk\Model\Shifts
+     * @return \PristimeSdk\Model\Shifts
      */
     public function getShifts()
     {
@@ -331,7 +331,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets shifts
      *
-     * @param \PristimeSdk\PristimeSdk\Model\Shifts $shifts shifts
+     * @param \PristimeSdk\Model\Shifts $shifts shifts
      *
      * @return self
      */
@@ -348,7 +348,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets durations
      *
-     * @return \PristimeSdk\PristimeSdk\Model\Durations
+     * @return \PristimeSdk\Model\Durations
      */
     public function getDurations()
     {
@@ -358,7 +358,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets durations
      *
-     * @param \PristimeSdk\PristimeSdk\Model\Durations $durations durations
+     * @param \PristimeSdk\Model\Durations $durations durations
      *
      * @return self
      */
@@ -375,7 +375,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets metrics
      *
-     * @return \PristimeSdk\PristimeSdk\Model\Metrics|null
+     * @return \PristimeSdk\Model\Metrics|null
      */
     public function getMetrics()
     {
@@ -385,7 +385,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets metrics
      *
-     * @param \PristimeSdk\PristimeSdk\Model\Metrics|null $metrics metrics
+     * @param \PristimeSdk\Model\Metrics|null $metrics metrics
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets broken_constraints
      *
-     * @return \PristimeSdk\PristimeSdk\Model\BrokenConstraints|null
+     * @return \PristimeSdk\Model\BrokenConstraints|null
      */
     public function getBrokenConstraints()
     {
@@ -419,7 +419,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets broken_constraints
      *
-     * @param \PristimeSdk\PristimeSdk\Model\BrokenConstraints|null $broken_constraints broken_constraints
+     * @param \PristimeSdk\Model\BrokenConstraints|null $broken_constraints broken_constraints
      *
      * @return self
      */

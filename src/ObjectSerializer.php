@@ -30,7 +30,7 @@
 namespace PristimeSdk;
 
 use GuzzleHttp\Psr7\Utils;
-use PristimeSdk\PristimeSdk\Model\ModelInterface;
+use PristimeSdk\Model\ModelInterface;
 
 /**
  * ObjectSerializer Class Doc Comment
