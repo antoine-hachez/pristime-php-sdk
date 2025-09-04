@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **preferred_time_revenue** | **float** | Bonus revenue from scheduling workers during their preferred time periods. Balances worker preferences with operational requirements. |
 **variable_costs** | **float** | Additional operational costs incurred from scheduling decisions. Includes dynamic costs that vary with assignment patterns. |
 **overtime_cost** | **float** | Premium labor costs for overtime hours beyond regular contract time. Reflects the additional expense of extended work periods. |
-**has_exceeded_preferred_max_consecutive_workdays_limit_cost** | **float** | Penalty cost when workers exceed preferred maximum consecutive workdays. Ensures work-life balance compliance and prevents burnout. |
+**has_exceeded_preferred_max_consecutive_workdays_limit_cost** | **float** | Penalty cost when workers exceed preferred maximum consecutive workdays. |
 **idle_time_cost** | **float** | Cost of unproductive time gaps between worker shifts. Encourages efficient schedule compactness while respecting break requirements. |
 **assignment_cost** | **float** | Base labor costs for worker assignments including wages, benefits, and administrative overhead. Core cost of workforce utilization. |
 **unpreferred_time_cost** | **float** | Penalty for scheduling workers during periods they marked as unpreferred. Balances operational needs with worker satisfaction. |
