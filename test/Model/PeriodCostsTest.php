@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PristimePhpSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -13,7 +13,7 @@
 /**
  * Pristime Workforce Scheduling API
  *
- * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules using Mixed Integer Programming (MIP).          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
+ * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules.          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
  *
  * The version of the OpenAPI document: 2.0.0
  * Contact: antoine.hachez@pristime.com
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace PristimePhpSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Cost structure for period-level contract optimization.  These cost parameters influence how the optimization algorithm makes scheduling decisions over longer time periods (weeks, months). Higher costs discourage certain types of scheduling patterns, while lower costs make them more attractive.  **How Costs Work in Optimization:** The algorithm tries to minimize total cost while meeting all constraints and demands. By adjusting these cost parameters, you can influence scheduling priorities:  **Cost Strategies:** - **High expected_hour cost**: Discourages scheduling beyond minimum guaranteed hours - **High flextime cost**: Encourages consistent scheduling around contractual hours - **Low undertime cost**: Allows some flexibility when full hours aren&#39;t needed  **Example Impact:** If per_expected_hour&#x3D;100 and a shift revenue&#x3D;80, the algorithm won&#39;t assign the shift unless it helps meet other constraints, since the cost exceeds the revenue.
- * @package     OpenAPI\Client
+ * @package     PristimePhpSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

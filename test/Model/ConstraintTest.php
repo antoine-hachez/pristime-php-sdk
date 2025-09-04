@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PristimePhpSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -13,7 +13,7 @@
 /**
  * Pristime Workforce Scheduling API
  *
- * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules using Mixed Integer Programming (MIP).          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
+ * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules.          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
  *
  * The version of the OpenAPI document: 2.0.0
  * Contact: antoine.hachez@pristime.com
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace PristimePhpSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Custom business rule that limits which shifts can be assigned to which workers.  Constraints allow you to enforce specific business requirements that go beyond the basic availability and skills matching. They work by limiting the total number of shifts that can be assigned from a specific set to a specific group of workers.  **Common Use Cases:** - **Exclusive assignments**: Ensure only one worker from a group can be assigned to critical shifts - **Load balancing**: Distribute high-demand shifts fairly across qualified workers - **Specialization limits**: Prevent workers from being over-assigned to specialized roles - **Cross-training**: Ensure multiple workers can cover important shift types - **Conflict resolution**: Handle situations where certain workers shouldn&#39;t work together  **How it works:** The constraint specifies a maximum number of shifts from &#x60;caller_shift_ids&#x60; that can be assigned to workers in &#x60;caller_worker_ids&#x60;. For example, with max_assigned&#x3D;1: - Only 1 of the specified shifts can be assigned to any of the specified workers - This could ensure exclusive coverage or prevent resource conflicts  **Example:** To ensure only one supervisor works weekend nights: - caller_shift_ids: [weekend_night_shift_1, weekend_night_shift_2] - caller_worker_ids: [supervisor_alice, supervisor_bob] - max_assigned: 1
- * @package     OpenAPI\Client
+ * @package     PristimePhpSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

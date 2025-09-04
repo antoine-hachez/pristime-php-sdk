@@ -1,10 +1,10 @@
-# PristimeClient
+# PristimePhpSdk
 
 
         ## Pristime Workforce Scheduling API
 
         The Pristime Scheduling API lets clients provide workers, shifts,
-        and constraints, and returns optimized schedules using Mixed Integer Programming (MIP).
+        and constraints, and returns optimized schedules.
 
         ## Authentication
 
@@ -32,11 +32,11 @@ To install the bindings via [Composer](https://getcomposer.org/), add the follow
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+      "url": "https://github.com/antoine-hachez/pristime-php-sdk.git"
     }
   ],
   "require": {
-    "GIT_USER_ID/GIT_REPO_ID": "*@dev"
+    "antoine-hachez/pristime-php-sdk": "*@dev"
   }
 }
 ```
@@ -49,7 +49,7 @@ Download the files and include `autoload.php`:
 
 ```php
 <?php
-require_once('/path/to/PristimeClient/vendor/autoload.php');
+require_once('/path/to/PristimePhpSdk/vendor/autoload.php');
 ```
 
 ## Getting Started
@@ -63,7 +63,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\HealthApi(
+$apiInstance = new PristimePhpSdk\Api\HealthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

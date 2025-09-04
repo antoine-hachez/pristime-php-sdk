@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PristimePhpSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -13,7 +13,7 @@
 /**
  * Pristime Workforce Scheduling API
  *
- * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules using Mixed Integer Programming (MIP).          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
+ * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules.          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
  *
  * The version of the OpenAPI document: 2.0.0
  * Contact: antoine.hachez@pristime.com
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace PristimePhpSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Represents a work shift that can be assigned to workers during scheduling optimization.  A shift defines a specific time period requiring worker coverage, including timing, location, required skills, break periods, and assignment status. Shifts can be: - **Unassigned**: Need a worker (will be optimally assigned) - **Pre-assigned**: Already have a worker but can be reassigned if beneficial - **Locked**: Have a worker and cannot be changed  **Day Assignment Rules for Night Shifts:** - The entire shift is associated with the day it **starts**, not when it ends - Uses the &#x60;day_boundary_offset_minutes&#x60; parameter for custom day boundaries - Example: Night shift 22:00 Monday → 06:00 Tuesday is a \&quot;Monday shift\&quot; - Workers with Monday availability can work this shift even if unavailable Tuesday  **Timing Conventions:** - Start time is included, end time is excluded [start_time, end_time) - All times must be whole minutes (no seconds or milliseconds) - Break periods are subtracted from total time to get actual work duration  **Assignment Optimization:** - Skills matching (worker must have all required skills) - Availability checking (no conflicts with unavailable periods) - Cost/revenue optimization (considers worker rates and shift value) - Constraint satisfaction (respects break requirements, consecutive day limits, etc.)
- * @package     OpenAPI\Client
+ * @package     PristimePhpSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

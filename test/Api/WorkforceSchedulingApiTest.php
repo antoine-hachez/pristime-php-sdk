@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PristimePhpSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -12,7 +12,7 @@
 /**
  * Pristime Workforce Scheduling API
  *
- * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules using Mixed Integer Programming (MIP).          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
+ * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules.          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
  *
  * The version of the OpenAPI document: 2.0.0
  * Contact: antoine.hachez@pristime.com
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace OpenAPI\Client\Test\Api;
+namespace PristimePhpSdk\Test\Api;
 
-use \OpenAPI\Client\Configuration;
-use \OpenAPI\Client\ApiException;
-use \OpenAPI\Client\ObjectSerializer;
+use \PristimePhpSdk\Configuration;
+use \PristimePhpSdk\ApiException;
+use \PristimePhpSdk\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * WorkforceSchedulingApiTest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PristimePhpSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

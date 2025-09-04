@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PristimePhpSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -13,7 +13,7 @@
 /**
  * Pristime Workforce Scheduling API
  *
- * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules using Mixed Integer Programming (MIP).          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
+ * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules.          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
  *
  * The version of the OpenAPI document: 2.0.0
  * Contact: antoine.hachez@pristime.com
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace PristimePhpSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Represents staffing requirements that need to be met during scheduling optimization.  A demand specifies: - **When**: Time periods requiring staff coverage (via time_series) - **How many**: Number of workers needed at each time point - **What skills**: Required qualifications for workers and shifts - **How to fulfill**: Optional shift creation settings for automatic coverage  **Time Series Format:** Demands use a time series to specify changing staffing needs over time. Each entry represents a change point where the required staffing level changes. Example: {9:00 AM: 3, 1:00 PM: 2, 5:00 PM: 0} means: - 3 workers needed from 9:00 AM to 1:00 PM - 2 workers needed from 1:00 PM to 5:00 PM - 0 workers needed after 5:00 PM  **Automatic Shift Creation:** When shift_creation_settings are provided, the system can automatically generate shifts to meet this demand if existing shifts are insufficient.  **Revenue Optimization:** Demand fulfillment generates revenue in the optimization algorithm, encouraging the system to prioritize meeting high-value staffing requirements.
- * @package     OpenAPI\Client
+ * @package     PristimePhpSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
@@ -90,33 +90,6 @@ class DemandTest extends TestCase
     }
 
     /**
-     * Test attribute "label"
-     */
-    public function testPropertyLabel()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "time_series"
-     */
-    public function testPropertyTimeSeries()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "upper_limit_increment"
-     */
-    public function testPropertyUpperLimitIncrement()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
      * Test attribute "timezone"
      */
     public function testPropertyTimezone()
@@ -138,6 +111,33 @@ class DemandTest extends TestCase
      * Test attribute "required_tags"
      */
     public function testPropertyRequiredTags()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "label"
+     */
+    public function testPropertyLabel()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "time_series"
+     */
+    public function testPropertyTimeSeries()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "upper_limit_increment"
+     */
+    public function testPropertyUpperLimitIncrement()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PristimePhpSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -13,7 +13,7 @@
 /**
  * Pristime Workforce Scheduling API
  *
- * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules using Mixed Integer Programming (MIP).          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
+ * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules.          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
  *
  * The version of the OpenAPI document: 2.0.0
  * Contact: antoine.hachez@pristime.com
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace PristimePhpSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description A time period with start and end datetimes, fundamental to workforce scheduling operations.  This class represents any time interval in the scheduling system and is used throughout for shifts, availability windows, breaks, PTO periods, and demands. It provides essential time manipulation methods for scheduling optimization.  **Critical Timing Convention - Half-Open Intervals:** - The start_datetime is **included** and the end_datetime is **excluded** [start, end) - This prevents overlaps and gaps when periods are adjacent - Example: Shift 10:00-18:00 includes 10:00:00 but excludes 18:00:00 exactly - Adjacent periods: 09:00-12:00 and 12:00-17:00 have no overlap or gap  **Common Usage in Scheduling:** - **Work Shifts**: Define when a worker is scheduled to work - **Availability**: When a worker is available for assignment - **Breaks**: Unpaid periods within shifts (subtracted from work time)  **Time Precision Rules:** - All datetimes must be whole minutes (seconds&#x3D;0, microseconds&#x3D;0)  **Key Features:** - Overlap detection and calculation - Period subtraction (for break handling) - Containment checking (worker availability vs. shift times) - Duration calculation in minutes
- * @package     OpenAPI\Client
+ * @package     PristimePhpSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PristimePhpSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -13,7 +13,7 @@
 /**
  * Pristime Workforce Scheduling API
  *
- * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules using Mixed Integer Programming (MIP).          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
+ * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules.          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
  *
  * The version of the OpenAPI document: 2.0.0
  * Contact: antoine.hachez@pristime.com
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace PristimePhpSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Configuration for automatically creating shifts to fulfill staffing demands.  When a demand cannot be fully satisfied by existing shifts, the system can automatically generate new shifts with these specifications. This is useful for:  - **Dynamic scheduling**: Create shifts on-demand based on actual staffing needs - **Gap filling**: Generate shifts to cover periods with insufficient existing coverage - **Uniform coverage**: Ensure consistent shift characteristics across time periods - **Skill-specific coverage**: Create shifts that require specific worker qualifications  **Important:** All created shifts must be compatible with the parent demand&#39;s requirements. For example, if the demand requires shifts with tag \&quot;ICU\&quot;, the shift creation settings must include \&quot;ICU\&quot; in their tags.
- * @package     OpenAPI\Client
+ * @package     PristimePhpSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
@@ -90,33 +90,6 @@ class ShiftCreationSettingsTest extends TestCase
     }
 
     /**
-     * Test attribute "required_skills"
-     */
-    public function testPropertyRequiredSkills()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "tags"
-     */
-    public function testPropertyTags()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "day_boundary_offset_minutes"
-     */
-    public function testPropertyDayBoundaryOffsetMinutes()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
      * Test attribute "break_minutes"
      */
     public function testPropertyBreakMinutes()
@@ -138,6 +111,33 @@ class ShiftCreationSettingsTest extends TestCase
      * Test attribute "continuous_work_duration_before_break"
      */
     public function testPropertyContinuousWorkDurationBeforeBreak()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "required_skills"
+     */
+    public function testPropertyRequiredSkills()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "tags"
+     */
+    public function testPropertyTags()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "day_boundary_offset_minutes"
+     */
+    public function testPropertyDayBoundaryOffsetMinutes()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');

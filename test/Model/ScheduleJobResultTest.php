@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  PristimePhpSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -13,7 +13,7 @@
 /**
  * Pristime Workforce Scheduling API
  *
- * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules using Mixed Integer Programming (MIP).          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
+ * ## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules.          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com
  *
  * The version of the OpenAPI document: 2.0.0
  * Contact: antoine.hachez@pristime.com
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace PristimePhpSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Complete results from workforce scheduling optimization containing all assignments, metrics, and analysis.  This is the core result object containing everything you need to understand and implement the optimized schedule. It provides the assignment decisions, performance metrics, constraint violations, and operational statistics from the optimization process.  **Key Components:**  **Schedule Results:** - shifts: All shift assignments (both your provided shifts and newly created ones) - durations: Time-based summary of schedule changes and impact
- * @package     OpenAPI\Client
+ * @package     PristimePhpSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
@@ -81,15 +81,6 @@ class ScheduleJobResultTest extends TestCase
     }
 
     /**
-     * Test attribute "metrics"
-     */
-    public function testPropertyMetrics()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
      * Test attribute "shifts"
      */
     public function testPropertyShifts()
@@ -102,6 +93,15 @@ class ScheduleJobResultTest extends TestCase
      * Test attribute "durations"
      */
     public function testPropertyDurations()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "metrics"
+     */
+    public function testPropertyMetrics()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');
