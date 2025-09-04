@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description PeriodContract represents the constraints of the contract over a period (usually a week).  **Key Features:** - **Time Limits**: Weekly/monthly hour minimums and maximums - **Day Limits**: How many days can be worked in the period - **Cost Management**: Period-level cost calculations for optimization - **Flextime Tracking**: Accumulated time debt/credit over the period - **Individual Day Rules**: Specific constraints for dates within the period  **Relationship to Daily Rules:** PeriodContract works alongside DayContract - the daily rules must be consistent with the period rules. For example, if weekly max is 40 hours, daily maximums should allow this to be achievable.
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

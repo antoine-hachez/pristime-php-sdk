@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Api;
+namespace PristimeSdk\PristimeSdk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use PristimePhpSdk\ApiException;
-use PristimePhpSdk\Configuration;
-use PristimePhpSdk\FormDataProcessor;
-use PristimePhpSdk\HeaderSelector;
-use PristimePhpSdk\ObjectSerializer;
+use PristimeSdk\ApiException;
+use PristimeSdk\Configuration;
+use PristimeSdk\FormDataProcessor;
+use PristimeSdk\HeaderSelector;
+use PristimeSdk\ObjectSerializer;
 
 /**
  * WorkforceSchedulingApi Class Doc Comment
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -134,12 +134,12 @@ class WorkforceSchedulingApi
      *
      * Create Workforce Schedule Optimization Job
      *
-     * @param  \PristimePhpSdk\Model\ScheduleState $schedule_state schedule_state (required)
+     * @param  \PristimeSdk\PristimeSdk\Model\ScheduleState $schedule_state schedule_state (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createScheduleJob'] to see the possible values for this operation
      *
-     * @throws \PristimePhpSdk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PristimeSdk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \PristimePhpSdk\Model\ScheduleJobResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse
+     * @return \PristimeSdk\PristimeSdk\Model\ScheduleJobResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse
      */
     public function createScheduleJob($schedule_state, string $contentType = self::contentTypes['createScheduleJob'][0])
     {
@@ -152,12 +152,12 @@ class WorkforceSchedulingApi
      *
      * Create Workforce Schedule Optimization Job
      *
-     * @param  \PristimePhpSdk\Model\ScheduleState $schedule_state (required)
+     * @param  \PristimeSdk\PristimeSdk\Model\ScheduleState $schedule_state (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createScheduleJob'] to see the possible values for this operation
      *
-     * @throws \PristimePhpSdk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PristimeSdk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \PristimePhpSdk\Model\ScheduleJobResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PristimeSdk\PristimeSdk\Model\ScheduleJobResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function createScheduleJobWithHttpInfo($schedule_state, string $contentType = self::contentTypes['createScheduleJob'][0])
     {
@@ -189,31 +189,31 @@ class WorkforceSchedulingApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ScheduleJobResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $request,
                         $response,
                     );
                 case 403:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $request,
                         $response,
                     );
                 case 422:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $request,
                         $response,
                     );
                 case 500:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $request,
                         $response,
                     );
@@ -235,7 +235,7 @@ class WorkforceSchedulingApi
             }
 
             return $this->handleResponseWithDataType(
-                '\PristimePhpSdk\Model\ScheduleJobResponse',
+                '\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse',
                 $request,
                 $response,
             );
@@ -244,7 +244,7 @@ class WorkforceSchedulingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ScheduleJobResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -252,7 +252,7 @@ class WorkforceSchedulingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -260,7 +260,7 @@ class WorkforceSchedulingApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -268,7 +268,7 @@ class WorkforceSchedulingApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -276,7 +276,7 @@ class WorkforceSchedulingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -293,7 +293,7 @@ class WorkforceSchedulingApi
      *
      * Create Workforce Schedule Optimization Job
      *
-     * @param  \PristimePhpSdk\Model\ScheduleState $schedule_state (required)
+     * @param  \PristimeSdk\PristimeSdk\Model\ScheduleState $schedule_state (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createScheduleJob'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -314,7 +314,7 @@ class WorkforceSchedulingApi
      *
      * Create Workforce Schedule Optimization Job
      *
-     * @param  \PristimePhpSdk\Model\ScheduleState $schedule_state (required)
+     * @param  \PristimeSdk\PristimeSdk\Model\ScheduleState $schedule_state (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createScheduleJob'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -322,7 +322,7 @@ class WorkforceSchedulingApi
      */
     public function createScheduleJobAsyncWithHttpInfo($schedule_state, string $contentType = self::contentTypes['createScheduleJob'][0])
     {
-        $returnType = '\PristimePhpSdk\Model\ScheduleJobResponse';
+        $returnType = '\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse';
         $request = $this->createScheduleJobRequest($schedule_state, $contentType);
 
         return $this->client
@@ -364,7 +364,7 @@ class WorkforceSchedulingApi
     /**
      * Create request for operation 'createScheduleJob'
      *
-     * @param  \PristimePhpSdk\Model\ScheduleState $schedule_state (required)
+     * @param  \PristimeSdk\PristimeSdk\Model\ScheduleState $schedule_state (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createScheduleJob'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -465,9 +465,9 @@ class WorkforceSchedulingApi
      * @param  string $job_id job_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getScheduleJob'] to see the possible values for this operation
      *
-     * @throws \PristimePhpSdk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PristimeSdk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \PristimePhpSdk\Model\ScheduleJobResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse
+     * @return \PristimeSdk\PristimeSdk\Model\ScheduleJobResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse
      */
     public function getScheduleJob($job_id, string $contentType = self::contentTypes['getScheduleJob'][0])
     {
@@ -483,9 +483,9 @@ class WorkforceSchedulingApi
      * @param  string $job_id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getScheduleJob'] to see the possible values for this operation
      *
-     * @throws \PristimePhpSdk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PristimeSdk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \PristimePhpSdk\Model\ScheduleJobResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse|\PristimePhpSdk\Model\ErrorResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PristimeSdk\PristimeSdk\Model\ScheduleJobResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse|\PristimeSdk\PristimeSdk\Model\ErrorResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getScheduleJobWithHttpInfo($job_id, string $contentType = self::contentTypes['getScheduleJob'][0])
     {
@@ -517,37 +517,37 @@ class WorkforceSchedulingApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ScheduleJobResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse',
                         $request,
                         $response,
                     );
                 case 401:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $request,
                         $response,
                     );
                 case 403:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $request,
                         $response,
                     );
                 case 422:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $request,
                         $response,
                     );
                 case 404:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $request,
                         $response,
                     );
                 case 500:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $request,
                         $response,
                     );
@@ -569,7 +569,7 @@ class WorkforceSchedulingApi
             }
 
             return $this->handleResponseWithDataType(
-                '\PristimePhpSdk\Model\ScheduleJobResponse',
+                '\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse',
                 $request,
                 $response,
             );
@@ -578,7 +578,7 @@ class WorkforceSchedulingApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ScheduleJobResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -586,7 +586,7 @@ class WorkforceSchedulingApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -594,7 +594,7 @@ class WorkforceSchedulingApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -602,7 +602,7 @@ class WorkforceSchedulingApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -610,7 +610,7 @@ class WorkforceSchedulingApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -618,7 +618,7 @@ class WorkforceSchedulingApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\ErrorResponse',
+                        '\PristimeSdk\PristimeSdk\Model\ErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -664,7 +664,7 @@ class WorkforceSchedulingApi
      */
     public function getScheduleJobAsyncWithHttpInfo($job_id, string $contentType = self::contentTypes['getScheduleJob'][0])
     {
-        $returnType = '\PristimePhpSdk\Model\ScheduleJobResponse';
+        $returnType = '\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse';
         $request = $this->getScheduleJobRequest($job_id, $contentType);
 
         return $this->client

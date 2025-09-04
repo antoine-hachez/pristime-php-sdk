@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * MaxConsecutiveWorkdays Class Doc Comment
  *
  * @category Class
  * @description Limits consecutive working days to prevent worker burnout and ensure adequate rest periods.  **Two-tier system:** - **Preferred maximum**: Soft constraint - optimizer tries to respect this limit but can exceed if necessary - **Absolute maximum**: Hard constraint - optimizer will never exceed this limit under any circumstances  Common patterns: - 5 preferred, 6 absolute: Standard Monday-Friday with weekend flexibility - 3 preferred, 5 absolute: Part-time workers with occasional full-time coverage - 6 preferred, 7 absolute: Full-time workers in 24/7 operations
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

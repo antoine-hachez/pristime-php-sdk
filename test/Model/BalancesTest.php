@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Container for all time balance tracking for a worker.  Helps ensure fair workload distribution across scheduling periods by carrying forward accumulated overtime and flextime balances.
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

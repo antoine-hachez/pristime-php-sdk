@@ -1,4 +1,4 @@
-# PristimePhpSdk\WorkforceSchedulingApi
+# PristimeSdk\WorkforceSchedulingApi
 
 All URIs are relative to https://pristime.com, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://pristime.com, except if the operation defines a
 ## `createScheduleJob()`
 
 ```php
-createScheduleJob($schedule_state): \PristimePhpSdk\Model\ScheduleJobResponse
+createScheduleJob($schedule_state): \PristimeSdk\PristimeSdk\Model\ScheduleJobResponse
 ```
 
 Create Workforce Schedule Optimization Job
@@ -26,18 +26,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: APIKeyHeader
-$config = PristimePhpSdk\Configuration::getDefaultConfiguration()->setApiKey('Pristime-API-Key', 'YOUR_API_KEY');
+$config = PristimeSdk\Configuration::getDefaultConfiguration()->setApiKey('Pristime-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = PristimePhpSdk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Pristime-API-Key', 'Bearer');
+// $config = PristimeSdk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Pristime-API-Key', 'Bearer');
 
 
-$apiInstance = new PristimePhpSdk\Api\WorkforceSchedulingApi(
+$apiInstance = new PristimeSdk\Api\WorkforceSchedulingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$schedule_state = new \PristimePhpSdk\Model\ScheduleState(); // \PristimePhpSdk\Model\ScheduleState
+$schedule_state = new \PristimeSdk\PristimeSdk\Model\ScheduleState(); // \PristimeSdk\PristimeSdk\Model\ScheduleState
 
 try {
     $result = $apiInstance->createScheduleJob($schedule_state);
@@ -51,11 +51,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **schedule_state** | [**\PristimePhpSdk\Model\ScheduleState**](../Model/ScheduleState.md)|  | |
+| **schedule_state** | [**\PristimeSdk\PristimeSdk\Model\ScheduleState**](../Model/ScheduleState.md)|  | |
 
 ### Return type
 
-[**\PristimePhpSdk\Model\ScheduleJobResponse**](../Model/ScheduleJobResponse.md)
+[**\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse**](../Model/ScheduleJobResponse.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ try {
 ## `getScheduleJob()`
 
 ```php
-getScheduleJob($job_id): \PristimePhpSdk\Model\ScheduleJobResponse
+getScheduleJob($job_id): \PristimeSdk\PristimeSdk\Model\ScheduleJobResponse
 ```
 
 Get Scheduling Job Status and Results
@@ -88,12 +88,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: APIKeyHeader
-$config = PristimePhpSdk\Configuration::getDefaultConfiguration()->setApiKey('Pristime-API-Key', 'YOUR_API_KEY');
+$config = PristimeSdk\Configuration::getDefaultConfiguration()->setApiKey('Pristime-API-Key', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = PristimePhpSdk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Pristime-API-Key', 'Bearer');
+// $config = PristimeSdk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Pristime-API-Key', 'Bearer');
 
 
-$apiInstance = new PristimePhpSdk\Api\WorkforceSchedulingApi(
+$apiInstance = new PristimeSdk\Api\WorkforceSchedulingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\PristimePhpSdk\Model\ScheduleJobResponse**](../Model/ScheduleJobResponse.md)
+[**\PristimeSdk\PristimeSdk\Model\ScheduleJobResponse**](../Model/ScheduleJobResponse.md)
 
 ### Authorization
 

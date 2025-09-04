@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Tracks accumulated time balances (overtime, flextime) carried forward between scheduling periods.  Balances can be positive (worker has worked more than expected) or negative (worker has worked less than expected). The optimizer considers these balances when making assignments to help achieve fair workload distribution over time.
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

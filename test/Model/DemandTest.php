@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Represents staffing requirements that need to be met during scheduling optimization.  A demand specifies: - **When**: Time periods requiring staff coverage (via time_series) - **How many**: Number of workers needed at each time point - **What skills**: Required qualifications for workers and shifts - **How to fulfill**: Optional shift creation settings for automatic coverage  **Time Series Format:** Demands use a time series to specify changing staffing needs over time. Each entry represents a change point where the required staffing level changes. Example: {9:00 AM: 3, 1:00 PM: 2, 5:00 PM: 0} means: - 3 workers needed from 9:00 AM to 1:00 PM - 2 workers needed from 1:00 PM to 5:00 PM - 0 workers needed after 5:00 PM  **Automatic Shift Creation:** When shift_creation_settings are provided, the system can automatically generate shifts to meet this demand if existing shifts are insufficient.  **Revenue Optimization:** Demand fulfillment generates revenue in the optimization algorithm, encouraging the system to prioritize meeting high-value staffing requirements.
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

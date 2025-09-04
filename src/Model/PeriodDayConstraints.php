@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * PeriodDayConstraints Class Doc Comment
  *
  * @category Class
  * @description Limits on the number of working days within a date range period. After a worker has reached the max_expected_days, any additional days will be scheduled as overtime.  **Common Patterns:** - **5-day work week**: scheduled_max&#x3D;5 (Monday-Friday only) - **Part-time**: expected_max&#x3D;3, scheduled_max&#x3D;4 (3 guaranteed, up to 4 total)
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

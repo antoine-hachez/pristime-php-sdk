@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * Balance Class Doc Comment
  *
  * @category Class
  * @description Tracks accumulated time balances (overtime, flextime) carried forward between scheduling periods.  Balances can be positive (worker has worked more than expected) or negative (worker has worked less than expected). The optimizer considers these balances when making assignments to help achieve fair workload distribution over time.
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

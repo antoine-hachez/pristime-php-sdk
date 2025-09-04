@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Tracks constraint violations that occurred during workforce scheduling optimization.  When the optimization algorithm cannot perfectly satisfy all constraints (worker availability, labor regulations, business rules), it uses &#39;slack variables&#39; to find the best possible solution. This class reports which constraints were relaxed and by how much.
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

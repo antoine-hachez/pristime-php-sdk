@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * Shifts Class Doc Comment
  *
  * @category Class
  * @description Complete collection of shifts after workforce scheduling optimization.  Organizes all shifts into two categories: those you provided in your request and those created automatically by the optimization algorithm to meet demands.  **Shift Categories:**  **Provided Shifts**: Existing shifts from your request - May have new worker assignments (optimized) - May remain unassigned if no suitable worker available - Tracked by your original shift IDs for easy mapping  **Created Shifts**: New shifts generated automatically - Created when demands exceed available provided shifts - Always assigned to workers (unassigned shifts aren&#39;t created) - Have new system-generated IDs  **Usage:** - Update your system with new assignments from &#39;provided&#39; - Add the &#39;created&#39; shifts as new schedule entries - Use shift IDs to map results back to your original data
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class Shifts implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'provided' => 'array<string,\PristimePhpSdk\Model\ShiftAssignmentResult>',
-        'created' => '\PristimePhpSdk\Model\Shift[]'
+        'provided' => 'array<string,\PristimeSdk\PristimeSdk\Model\ShiftAssignmentResult>',
+        'created' => '\PristimeSdk\PristimeSdk\Model\Shift[]'
     ];
 
     /**
@@ -307,7 +307,7 @@ class Shifts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets provided
      *
-     * @return array<string,\PristimePhpSdk\Model\ShiftAssignmentResult>
+     * @return array<string,\PristimeSdk\PristimeSdk\Model\ShiftAssignmentResult>
      */
     public function getProvided()
     {
@@ -317,7 +317,7 @@ class Shifts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets provided
      *
-     * @param array<string,\PristimePhpSdk\Model\ShiftAssignmentResult> $provided Assignment results for shifts you provided in the request, keyed by your original shift IDs. Shows which worker (if any) is now assigned to each existing shift.
+     * @param array<string,\PristimeSdk\PristimeSdk\Model\ShiftAssignmentResult> $provided Assignment results for shifts you provided in the request, keyed by your original shift IDs. Shows which worker (if any) is now assigned to each existing shift.
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class Shifts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets created
      *
-     * @return \PristimePhpSdk\Model\Shift[]
+     * @return \PristimeSdk\PristimeSdk\Model\Shift[]
      */
     public function getCreated()
     {
@@ -344,7 +344,7 @@ class Shifts implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets created
      *
-     * @param \PristimePhpSdk\Model\Shift[] $created New shifts automatically created by the optimization algorithm to meet staffing demands. These are additional shifts beyond what you originally provided, always with assigned workers.
+     * @param \PristimeSdk\PristimeSdk\Model\Shift[] $created New shifts automatically created by the optimization algorithm to meet staffing demands. These are additional shifts beyond what you originally provided, always with assigned workers.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Daily cost parameters for different types of work time used in optimization calculations.  These costs influence how the optimizer assigns shifts by making certain work patterns more or less economically attractive. Higher costs discourage the optimizer from choosing those assignments, while lower costs make them more appealing.  **Business Impact:** - Controls overtime usage (higher overtime costs &#x3D; less overtime assignments) - Manages idle time between shifts (higher idle costs &#x3D; more efficient scheduling) - Balances expected vs actual work hours (flextime cost management)
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

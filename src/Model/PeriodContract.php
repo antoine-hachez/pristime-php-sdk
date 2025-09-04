@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * PeriodContract Class Doc Comment
  *
  * @category Class
  * @description PeriodContract represents the constraints of the contract over a period (usually a week).  **Key Features:** - **Time Limits**: Weekly/monthly hour minimums and maximums - **Day Limits**: How many days can be worked in the period - **Cost Management**: Period-level cost calculations for optimization - **Flextime Tracking**: Accumulated time debt/credit over the period - **Individual Day Rules**: Specific constraints for dates within the period  **Relationship to Daily Rules:** PeriodContract works alongside DayContract - the daily rules must be consistent with the period rules. For example, if weekly max is 40 hours, daily maximums should allow this to be achievable.
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,10 +61,10 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
-        'time_constraints' => '\PristimePhpSdk\Model\PeriodTimeConstraints',
-        'day_constraints' => '\PristimePhpSdk\Model\PeriodDayConstraints',
-        'days' => 'array<string,\PristimePhpSdk\Model\DayContract>',
-        'costs' => '\PristimePhpSdk\Model\PeriodCosts',
+        'time_constraints' => '\PristimeSdk\PristimeSdk\Model\PeriodTimeConstraints',
+        'day_constraints' => '\PristimeSdk\PristimeSdk\Model\PeriodDayConstraints',
+        'days' => 'array<string,\PristimeSdk\PristimeSdk\Model\DayContract>',
+        'costs' => '\PristimeSdk\PristimeSdk\Model\PeriodCosts',
         'flextime_factor' => 'int'
     ];
 
@@ -396,7 +396,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets time_constraints
      *
-     * @return \PristimePhpSdk\Model\PeriodTimeConstraints|null
+     * @return \PristimeSdk\PristimeSdk\Model\PeriodTimeConstraints|null
      */
     public function getTimeConstraints()
     {
@@ -406,7 +406,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets time_constraints
      *
-     * @param \PristimePhpSdk\Model\PeriodTimeConstraints|null $time_constraints time_constraints
+     * @param \PristimeSdk\PristimeSdk\Model\PeriodTimeConstraints|null $time_constraints time_constraints
      *
      * @return self
      */
@@ -423,7 +423,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets day_constraints
      *
-     * @return \PristimePhpSdk\Model\PeriodDayConstraints|null
+     * @return \PristimeSdk\PristimeSdk\Model\PeriodDayConstraints|null
      */
     public function getDayConstraints()
     {
@@ -433,7 +433,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets day_constraints
      *
-     * @param \PristimePhpSdk\Model\PeriodDayConstraints|null $day_constraints day_constraints
+     * @param \PristimeSdk\PristimeSdk\Model\PeriodDayConstraints|null $day_constraints day_constraints
      *
      * @return self
      */
@@ -450,7 +450,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets days
      *
-     * @return array<string,\PristimePhpSdk\Model\DayContract>|null
+     * @return array<string,\PristimeSdk\PristimeSdk\Model\DayContract>|null
      */
     public function getDays()
     {
@@ -460,7 +460,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets days
      *
-     * @param array<string,\PristimePhpSdk\Model\DayContract>|null $days days
+     * @param array<string,\PristimeSdk\PristimeSdk\Model\DayContract>|null $days days
      *
      * @return self
      */
@@ -477,7 +477,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets costs
      *
-     * @return \PristimePhpSdk\Model\PeriodCosts|null
+     * @return \PristimeSdk\PristimeSdk\Model\PeriodCosts|null
      */
     public function getCosts()
     {
@@ -487,7 +487,7 @@ class PeriodContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets costs
      *
-     * @param \PristimePhpSdk\Model\PeriodCosts|null $costs costs
+     * @param \PristimeSdk\PristimeSdk\Model\PeriodCosts|null $costs costs
      *
      * @return self
      */

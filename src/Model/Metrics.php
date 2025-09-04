@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * Metrics Class Doc Comment
  *
  * @category Class
  * @description Comprehensive financial and operational metrics from workforce scheduling optimization.  These metrics provide detailed insights into the optimization&#39;s effectiveness, including revenue generated, costs incurred, and operational statistics. Essential for understanding the business impact and quality of scheduling decisions.  **Metric Categories:**  **Primary Metrics:** - profit: Overall optimization value (revenue - costs) - partial_profit: Profit excluding period-closing adjustments  **Revenue Sources:** - assignment_revenue: Value from assigning workers to high-value shifts - demand_revenue: Revenue from meeting staffing demand requirements - preferred_time_revenue: Bonus for scheduling during preferred hours - continuity_revenue: Value from maintaining worker schedule consistency - skill_revenue: Revenue from matching skilled workers with shifts that require their skills. - pto_time_revenue: Value from optimally scheduling paid time off  **Cost Factors:** - assignment_cost: Cost of worker assignments - overtime_cost: Cost of overtime hours - unpreferred_time_cost: Penalty for scheduling during unpreferred hours - idle_time_cost: Cost of gaps between worker shifts - variable_costs: Sum of all costs above  **Balance Management:** - period_closing_profit: Flextime and overtime balance adjustments - flextime_balance_negative_revenue: Revenue from accumulated time credit - flextime_balance_positive_cost: Cost of accumulated time credits - overtime_balance_cost: Cost of overtime balance  **Operational Statistics:** - assigned_time: Total minutes of productive work scheduled - overtime: Minutes of premium overtime scheduled - recovered_time: Overtime taken as PTO instead of cash payment
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

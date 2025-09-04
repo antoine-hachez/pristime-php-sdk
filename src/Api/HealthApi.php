@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Api;
+namespace PristimeSdk\PristimeSdk\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -37,17 +37,17 @@ use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use PristimePhpSdk\ApiException;
-use PristimePhpSdk\Configuration;
-use PristimePhpSdk\FormDataProcessor;
-use PristimePhpSdk\HeaderSelector;
-use PristimePhpSdk\ObjectSerializer;
+use PristimeSdk\ApiException;
+use PristimeSdk\Configuration;
+use PristimeSdk\FormDataProcessor;
+use PristimeSdk\HeaderSelector;
+use PristimeSdk\ObjectSerializer;
 
 /**
  * HealthApi Class Doc Comment
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -133,9 +133,9 @@ class HealthApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
      *
-     * @throws \PristimePhpSdk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PristimeSdk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \PristimePhpSdk\Model\Response
+     * @return \PristimeSdk\PristimeSdk\Model\Response
      */
     public function healthCheck(string $contentType = self::contentTypes['healthCheck'][0])
     {
@@ -150,9 +150,9 @@ class HealthApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['healthCheck'] to see the possible values for this operation
      *
-     * @throws \PristimePhpSdk\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \PristimeSdk\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \PristimePhpSdk\Model\Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \PristimeSdk\PristimeSdk\Model\Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function healthCheckWithHttpInfo(string $contentType = self::contentTypes['healthCheck'][0])
     {
@@ -184,7 +184,7 @@ class HealthApi
             switch($statusCode) {
                 case 200:
                     return $this->handleResponseWithDataType(
-                        '\PristimePhpSdk\Model\Response',
+                        '\PristimeSdk\PristimeSdk\Model\Response',
                         $request,
                         $response,
                     );
@@ -206,7 +206,7 @@ class HealthApi
             }
 
             return $this->handleResponseWithDataType(
-                '\PristimePhpSdk\Model\Response',
+                '\PristimeSdk\PristimeSdk\Model\Response',
                 $request,
                 $response,
             );
@@ -215,7 +215,7 @@ class HealthApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\PristimePhpSdk\Model\Response',
+                        '\PristimeSdk\PristimeSdk\Model\Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -259,7 +259,7 @@ class HealthApi
      */
     public function healthCheckAsyncWithHttpInfo(string $contentType = self::contentTypes['healthCheck'][0])
     {
-        $returnType = '\PristimePhpSdk\Model\Response';
+        $returnType = '\PristimeSdk\PristimeSdk\Model\Response';
         $request = $this->healthCheckRequest($contentType);
 
         return $this->client

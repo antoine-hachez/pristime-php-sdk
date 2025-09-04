@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Represents a work shift that can be assigned to workers during scheduling optimization.  A shift defines a specific time period requiring worker coverage, including timing, location, required skills, break periods, and assignment status. Shifts can be: - **Unassigned**: Need a worker (will be optimally assigned) - **Pre-assigned**: Already have a worker but can be reassigned if beneficial - **Locked**: Have a worker and cannot be changed  **Day Assignment Rules for Night Shifts:** - The entire shift is associated with the day it **starts**, not when it ends - Uses the &#x60;day_boundary_offset_minutes&#x60; parameter for custom day boundaries - Example: Night shift 22:00 Monday → 06:00 Tuesday is a \&quot;Monday shift\&quot; - Workers with Monday availability can work this shift even if unavailable Tuesday  **Timing Conventions:** - Start time is included, end time is excluded [start_time, end_time) - All times must be whole minutes (no seconds or milliseconds) - Break periods are subtracted from total time to get actual work duration  **Assignment Optimization:** - Skills matching (worker must have all required skills) - Availability checking (no conflicts with unavailable periods) - Cost/revenue optimization (considers worker rates and shift value) - Constraint satisfaction (respects break requirements, consecutive day limits, etc.)
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

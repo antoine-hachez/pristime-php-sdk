@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * Availability Class Doc Comment
  *
  * @category Class
  * @description Defines a worker&#39;s availability preferences and restrictions for scheduling.  Availability is used by the optimizer to respect worker preferences and constraints: - **Unavailable periods**: Hard constraints - worker cannot be assigned shifts during these times - **Preferred periods**: Soft preferences - optimizer tries to assign shifts during these times - **Unpreferred periods**: Soft constraints - optimizer avoids these times but can use them if needed  All periods use standard timing: start time included, end time excluded, whole minutes only.
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class Availability implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'unavailable_periods' => '\PristimePhpSdk\Model\Period[]',
-        'preferred_periods' => '\PristimePhpSdk\Model\Period[]',
-        'unpreferred_periods' => '\PristimePhpSdk\Model\Period[]'
+        'unavailable_periods' => '\PristimeSdk\PristimeSdk\Model\Period[]',
+        'preferred_periods' => '\PristimeSdk\PristimeSdk\Model\Period[]',
+        'unpreferred_periods' => '\PristimeSdk\PristimeSdk\Model\Period[]'
     ];
 
     /**
@@ -308,7 +308,7 @@ class Availability implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unavailable_periods
      *
-     * @return \PristimePhpSdk\Model\Period[]|null
+     * @return \PristimeSdk\PristimeSdk\Model\Period[]|null
      */
     public function getUnavailablePeriods()
     {
@@ -318,7 +318,7 @@ class Availability implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unavailable_periods
      *
-     * @param \PristimePhpSdk\Model\Period[]|null $unavailable_periods Time periods when worker cannot work at all (vacation, appointments, other commitments). These are hard constraints - no shifts will be assigned during these times.
+     * @param \PristimeSdk\PristimeSdk\Model\Period[]|null $unavailable_periods Time periods when worker cannot work at all (vacation, appointments, other commitments). These are hard constraints - no shifts will be assigned during these times.
      *
      * @return self
      */
@@ -335,7 +335,7 @@ class Availability implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets preferred_periods
      *
-     * @return \PristimePhpSdk\Model\Period[]|null
+     * @return \PristimeSdk\PristimeSdk\Model\Period[]|null
      */
     public function getPreferredPeriods()
     {
@@ -345,7 +345,7 @@ class Availability implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets preferred_periods
      *
-     * @param \PristimePhpSdk\Model\Period[]|null $preferred_periods Time periods when worker prefers to work (preferred hours, days off). The optimizer will prioritize assigning shifts during these times when possible.
+     * @param \PristimeSdk\PristimeSdk\Model\Period[]|null $preferred_periods Time periods when worker prefers to work (preferred hours, days off). The optimizer will prioritize assigning shifts during these times when possible.
      *
      * @return self
      */
@@ -362,7 +362,7 @@ class Availability implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unpreferred_periods
      *
-     * @return \PristimePhpSdk\Model\Period[]|null
+     * @return \PristimeSdk\PristimeSdk\Model\Period[]|null
      */
     public function getUnpreferredPeriods()
     {
@@ -372,7 +372,7 @@ class Availability implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unpreferred_periods
      *
-     * @param \PristimePhpSdk\Model\Period[]|null $unpreferred_periods Time periods when worker prefers not to work but is available if needed (late nights, early mornings). Used as last resort or penalized in optimization.
+     * @param \PristimeSdk\PristimeSdk\Model\Period[]|null $unpreferred_periods Time periods when worker prefers not to work but is available if needed (late nights, early mornings). Used as last resort or penalized in optimization.
      *
      * @return self
      */

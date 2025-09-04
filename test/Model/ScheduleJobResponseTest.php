@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description API response wrapper for workforce scheduling optimization jobs.  This is the top-level response object returned by both synchronous and asynchronous scheduling endpoints. It provides job tracking information and contains the complete optimization results when processing is complete.  **Response Structure:**  **Job Information:** - schedule_job_id: Unique identifier for tracking the job - status: Current job state (running, completed, failed) - message: Human-readable status updates or error information  **Optimization Results:** - result: Complete scheduling results (only present when status&#x3D;&#39;completed&#39;)  **Status Values:** - **&#39;running&#39;**: Job is still processing (async jobs only) - **&#39;completed&#39;**: Job finished successfully, results available - **&#39;failed&#39;**: Job encountered an error, check message for details  **Usage Patterns:**  **Asynchronous Jobs** (POST /schedule-jobs, GET /schedule-jobs/{id}): - POST returns immediately with status&#x3D;&#39;running&#39; and job ID - Use GET to poll for completion and retrieve results - Recommended for production workloads  **Error Handling:** - Check status before processing results - Use message for error details when status&#x3D;&#39;failed&#39;
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

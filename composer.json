@@ -1,5 +1,6 @@
 {
     "name": "antoine-hachez/pristime-php-sdk",
+    "version": "1.0.0",
     "description": "## Pristime Workforce Scheduling API          The Pristime Scheduling API lets clients provide workers, shifts,         and constraints, and returns optimized schedules.          ## Authentication          All endpoints require an API key in the `Pristime-API-Key` header.          ## Support          For technical support, contact us at antoine.hachez@pristime.com",
     "keywords": [
         "openapitools",
@@ -10,12 +11,12 @@
         "rest",
         "api"
     ],
-    "homepage": "https://openapi-generator.tech",
-    "license": "unlicense",
+    "homepage": "https://github.com/antoine-hachez/pristime-php-sdk",
+    "license": "MIT",
     "authors": [
         {
-            "name": "OpenAPI",
-            "homepage": "https://openapi-generator.tech"
+            "name": "Pristime",
+            "homepage": "https://pristime.com"
         }
     ],
     "require": {
@@ -31,9 +32,9 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "PristimePhpSdk\\" : "src/" }
+        "psr-4": { "PristimeSdk\\" : "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "PristimePhpSdk\\Test\\" : "test/" }
+        "psr-4": { "PristimeSdk\\Test\\" : "test/" }
     }
 }

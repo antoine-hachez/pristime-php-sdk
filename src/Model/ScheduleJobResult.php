@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * ScheduleJobResult Class Doc Comment
  *
  * @category Class
  * @description Complete results from workforce scheduling optimization containing all assignments, metrics, and analysis.  This is the core result object containing everything you need to understand and implement the optimized schedule. It provides the assignment decisions, performance metrics, constraint violations, and operational statistics from the optimization process.  **Key Components:**  **Schedule Results:** - shifts: All shift assignments (both your provided shifts and newly created ones) - durations: Time-based summary of schedule changes and impact
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,10 +59,10 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shifts' => '\PristimePhpSdk\Model\Shifts',
-        'durations' => '\PristimePhpSdk\Model\Durations',
-        'metrics' => '\PristimePhpSdk\Model\Metrics',
-        'broken_constraints' => '\PristimePhpSdk\Model\BrokenConstraints'
+        'shifts' => '\PristimeSdk\PristimeSdk\Model\Shifts',
+        'durations' => '\PristimeSdk\PristimeSdk\Model\Durations',
+        'metrics' => '\PristimeSdk\PristimeSdk\Model\Metrics',
+        'broken_constraints' => '\PristimeSdk\PristimeSdk\Model\BrokenConstraints'
     ];
 
     /**
@@ -321,7 +321,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets shifts
      *
-     * @return \PristimePhpSdk\Model\Shifts
+     * @return \PristimeSdk\PristimeSdk\Model\Shifts
      */
     public function getShifts()
     {
@@ -331,7 +331,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets shifts
      *
-     * @param \PristimePhpSdk\Model\Shifts $shifts shifts
+     * @param \PristimeSdk\PristimeSdk\Model\Shifts $shifts shifts
      *
      * @return self
      */
@@ -348,7 +348,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets durations
      *
-     * @return \PristimePhpSdk\Model\Durations
+     * @return \PristimeSdk\PristimeSdk\Model\Durations
      */
     public function getDurations()
     {
@@ -358,7 +358,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets durations
      *
-     * @param \PristimePhpSdk\Model\Durations $durations durations
+     * @param \PristimeSdk\PristimeSdk\Model\Durations $durations durations
      *
      * @return self
      */
@@ -375,7 +375,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets metrics
      *
-     * @return \PristimePhpSdk\Model\Metrics|null
+     * @return \PristimeSdk\PristimeSdk\Model\Metrics|null
      */
     public function getMetrics()
     {
@@ -385,7 +385,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets metrics
      *
-     * @param \PristimePhpSdk\Model\Metrics|null $metrics metrics
+     * @param \PristimeSdk\PristimeSdk\Model\Metrics|null $metrics metrics
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets broken_constraints
      *
-     * @return \PristimePhpSdk\Model\BrokenConstraints|null
+     * @return \PristimeSdk\PristimeSdk\Model\BrokenConstraints|null
      */
     public function getBrokenConstraints()
     {
@@ -419,7 +419,7 @@ class ScheduleJobResult implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets broken_constraints
      *
-     * @param \PristimePhpSdk\Model\BrokenConstraints|null $broken_constraints broken_constraints
+     * @param \PristimeSdk\PristimeSdk\Model\BrokenConstraints|null $broken_constraints broken_constraints
      *
      * @return self
      */

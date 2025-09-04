@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * DayTimeConstraints Class Doc Comment
  *
  * @category Class
  * @description Daily time constraints and limits for a worker&#39;s contract.  This class defines the rules and boundaries for how much time a worker can work on a specific date. It sets both minimum requirements (guarantees) and maximum limits (to prevent overwork and comply with labor regulations).  **Key Constraint Types:** - **Contractual Time**: The standard daily hours for flextime calculations - **Expected Time**: Minimum guaranteed hours (worker gets paid even if no work) - **Assigned Time**: Limits on actual productive work hours - **Overtime**: Extra hours beyond regular time, often at premium pay rates - **Scheduled Time**: Total time including work, PTO, and recovery time  **Common Patterns:** - Full-time: 8 hours expected, up to 10 hours total (2 hours overtime max) - Part-time: 4 hours expected, up to 6 hours total - On-call: 0 hours expected, up to 12 hours available
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,13 +26,13 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk;
+namespace PristimeSdk;
 
 /**
  * HeaderSelector Class Doc Comment
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

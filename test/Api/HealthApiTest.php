@@ -4,7 +4,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace PristimePhpSdk\Test\Api;
+namespace PristimeSdk\Test\Api;
 
-use \PristimePhpSdk\Configuration;
-use \PristimePhpSdk\ApiException;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\Configuration;
+use \PristimeSdk\ApiException;
+use \PristimeSdk\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * HealthApiTest Class Doc Comment
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

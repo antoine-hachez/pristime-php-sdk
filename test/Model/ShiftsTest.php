@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Complete collection of shifts after workforce scheduling optimization.  Organizes all shifts into two categories: those you provided in your request and those created automatically by the optimization algorithm to meet demands.  **Shift Categories:**  **Provided Shifts**: Existing shifts from your request - May have new worker assignments (optimized) - May remain unassigned if no suitable worker available - Tracked by your original shift IDs for easy mapping  **Created Shifts**: New shifts generated automatically - Created when demands exceed available provided shifts - Always assigned to workers (unassigned shifts aren&#39;t created) - Have new system-generated IDs  **Usage:** - Update your system with new assignments from &#39;provided&#39; - Add the &#39;created&#39; shifts as new schedule entries - Use shift IDs to map results back to your original data
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * PeriodCosts Class Doc Comment
  *
  * @category Class
  * @description Cost structure for period-level contract optimization.  These cost parameters influence how the optimization algorithm makes scheduling decisions over longer time periods (weeks, months). Higher costs discourage certain types of scheduling patterns, while lower costs make them more attractive.  **How Costs Work in Optimization:** The algorithm tries to minimize total cost while meeting all constraints and demands. By adjusting these cost parameters, you can influence scheduling priorities:  **Cost Strategies:** - **High expected_hour cost**: Discourages scheduling beyond minimum guaranteed hours - **High flextime cost**: Encourages consistent scheduling around contractual hours - **Low undertime cost**: Allows some flexibility when full hours aren&#39;t needed  **Example Impact:** If per_expected_hour&#x3D;100 and a shift revenue&#x3D;80, the algorithm won&#39;t assign the shift unless it helps meet other constraints, since the cost exceeds the revenue.
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

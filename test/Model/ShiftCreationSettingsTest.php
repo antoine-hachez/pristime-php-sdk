@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Configuration for automatically creating shifts to fulfill staffing demands.  When a demand cannot be fully satisfied by existing shifts, the system can automatically generate new shifts with these specifications. This is useful for:  - **Dynamic scheduling**: Create shifts on-demand based on actual staffing needs - **Gap filling**: Generate shifts to cover periods with insufficient existing coverage - **Uniform coverage**: Ensure consistent shift characteristics across time periods - **Skill-specific coverage**: Create shifts that require specific worker qualifications  **Important:** All created shifts must be compatible with the parent demand&#39;s requirements. For example, if the demand requires shifts with tag \&quot;ICU\&quot;, the shift creation settings must include \&quot;ICU\&quot; in their tags.
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

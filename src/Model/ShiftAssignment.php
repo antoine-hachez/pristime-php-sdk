@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * ShiftAssignment Class Doc Comment
  *
  * @category Class
  * @description Tracks the current assignment status of a shift to a worker.  **Assignment States:** - **Unassigned**: worker_id is None, can be assigned to any compatible worker - **Assigned**: worker_id is set, can be reassigned if not locked - **Locked**: worker_id is set and is_locked is True, cannot be changed  **Locking Behavior:** - Locked shifts maintain their current assignment during optimization
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

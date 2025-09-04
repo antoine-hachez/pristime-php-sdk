@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Represents a staff member available for shift assignment in workforce scheduling.  A Worker contains all the information needed to determine shift compatibility and assignment optimality including:  **Key Information:** - Basic identification and contact details - Work availability periods (preferred, unpreferred, unavailable times) - Skills and qualifications for matching with shift requirements - Labor constraints (consecutive workdays, break requirements, etc.) - Time balance tracking (overtime, flextime accumulated hours) - Cost and revenue parameters for optimization calculations  **Assignment Compatibility:** The system automatically checks worker-shift compatibility based on: - Skills matching (worker must have all skills required by shift) - Time availability (shift must not overlap unavailable periods) - Work constraints (respect minimum breaks, maximum consecutive days) - Contract limits (daily/weekly hour restrictions)  **Optimization Impact:** Each worker has cost/revenue parameters that influence the optimization algorithm&#39;s assignment decisions to balance operational efficiency with labor costs and worker preferences.
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

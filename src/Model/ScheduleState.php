@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * ScheduleState Class Doc Comment
  *
  * @category Class
  * @description Complete workforce scheduling optimization request.  This is the main payload for scheduling jobs, containing all the information needed to optimize shift assignments across your workforce. The optimization engine will assign shifts to workers while respecting availability, skills, labor constraints, and business rules to meet staffing demands efficiently.  **Typical Workflow:** 1. Define the scheduling period and timezone 2. Add your workers with their availability and skills 3. Add shifts to be assigned (existing or new) 4. Specify staffing demands (how many workers needed when) 5. Add any custom constraints 6. Submit for optimization 7. Receive optimized shift assignments
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'scheduling_period' => '\PristimePhpSdk\Model\SchedulingPeriod',
-        'workers' => '\PristimePhpSdk\Model\Worker[]',
-        'shifts' => '\PristimePhpSdk\Model\Shift[]',
-        'demands' => '\PristimePhpSdk\Model\Demand[]',
-        'config' => '\PristimePhpSdk\Model\ScheduleJobConfig'
+        'scheduling_period' => '\PristimeSdk\PristimeSdk\Model\SchedulingPeriod',
+        'workers' => '\PristimeSdk\PristimeSdk\Model\Worker[]',
+        'shifts' => '\PristimeSdk\PristimeSdk\Model\Shift[]',
+        'demands' => '\PristimeSdk\PristimeSdk\Model\Demand[]',
+        'config' => '\PristimeSdk\PristimeSdk\Model\ScheduleJobConfig'
     ];
 
     /**
@@ -325,7 +325,7 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets scheduling_period
      *
-     * @return \PristimePhpSdk\Model\SchedulingPeriod
+     * @return \PristimeSdk\PristimeSdk\Model\SchedulingPeriod
      */
     public function getSchedulingPeriod()
     {
@@ -335,7 +335,7 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets scheduling_period
      *
-     * @param \PristimePhpSdk\Model\SchedulingPeriod $scheduling_period scheduling_period
+     * @param \PristimeSdk\PristimeSdk\Model\SchedulingPeriod $scheduling_period scheduling_period
      *
      * @return self
      */
@@ -352,7 +352,7 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets workers
      *
-     * @return \PristimePhpSdk\Model\Worker[]|null
+     * @return \PristimeSdk\PristimeSdk\Model\Worker[]|null
      */
     public function getWorkers()
     {
@@ -362,7 +362,7 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets workers
      *
-     * @param \PristimePhpSdk\Model\Worker[]|null $workers Your staff members available for shift assignment. Include their availability, skills, work constraints, and contract details.
+     * @param \PristimeSdk\PristimeSdk\Model\Worker[]|null $workers Your staff members available for shift assignment. Include their availability, skills, work constraints, and contract details.
      *
      * @return self
      */
@@ -379,7 +379,7 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shifts
      *
-     * @return \PristimePhpSdk\Model\Shift[]|null
+     * @return \PristimeSdk\PristimeSdk\Model\Shift[]|null
      */
     public function getShifts()
     {
@@ -389,7 +389,7 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shifts
      *
-     * @param \PristimePhpSdk\Model\Shift[]|null $shifts Work shifts to be optimized. Can include assigned and unassigned shifts.
+     * @param \PristimeSdk\PristimeSdk\Model\Shift[]|null $shifts Work shifts to be optimized. Can include assigned and unassigned shifts.
      *
      * @return self
      */
@@ -406,7 +406,7 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets demands
      *
-     * @return \PristimePhpSdk\Model\Demand[]|null
+     * @return \PristimeSdk\PristimeSdk\Model\Demand[]|null
      */
     public function getDemands()
     {
@@ -416,7 +416,7 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets demands
      *
-     * @param \PristimePhpSdk\Model\Demand[]|null $demands Staffing requirements over time - specify how many workers with certain skills you need at different times.
+     * @param \PristimeSdk\PristimeSdk\Model\Demand[]|null $demands Staffing requirements over time - specify how many workers with certain skills you need at different times.
      *
      * @return self
      */
@@ -433,7 +433,7 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets config
      *
-     * @return \PristimePhpSdk\Model\ScheduleJobConfig|null
+     * @return \PristimeSdk\PristimeSdk\Model\ScheduleJobConfig|null
      */
     public function getConfig()
     {
@@ -443,7 +443,7 @@ class ScheduleState implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets config
      *
-     * @param \PristimePhpSdk\Model\ScheduleJobConfig|null $config config
+     * @param \PristimeSdk\PristimeSdk\Model\ScheduleJobConfig|null $config config
      *
      * @return self
      */

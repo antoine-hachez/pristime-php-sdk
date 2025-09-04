@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * Balances Class Doc Comment
  *
  * @category Class
  * @description Container for all time balance tracking for a worker.  Helps ensure fair workload distribution across scheduling periods by carrying forward accumulated overtime and flextime balances.
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class Balances implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'overtime_balance' => '\PristimePhpSdk\Model\Balance',
-        'flextime_balance' => '\PristimePhpSdk\Model\Balance'
+        'overtime_balance' => '\PristimeSdk\PristimeSdk\Model\Balance',
+        'flextime_balance' => '\PristimeSdk\PristimeSdk\Model\Balance'
     ];
 
     /**
@@ -307,7 +307,7 @@ class Balances implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets overtime_balance
      *
-     * @return \PristimePhpSdk\Model\Balance
+     * @return \PristimeSdk\PristimeSdk\Model\Balance
      */
     public function getOvertimeBalance()
     {
@@ -317,7 +317,7 @@ class Balances implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets overtime_balance
      *
-     * @param \PristimePhpSdk\Model\Balance $overtime_balance overtime_balance
+     * @param \PristimeSdk\PristimeSdk\Model\Balance $overtime_balance overtime_balance
      *
      * @return self
      */
@@ -334,7 +334,7 @@ class Balances implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets flextime_balance
      *
-     * @return \PristimePhpSdk\Model\Balance
+     * @return \PristimeSdk\PristimeSdk\Model\Balance
      */
     public function getFlextimeBalance()
     {
@@ -344,7 +344,7 @@ class Balances implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets flextime_balance
      *
-     * @param \PristimePhpSdk\Model\Balance $flextime_balance flextime_balance
+     * @param \PristimeSdk\PristimeSdk\Model\Balance $flextime_balance flextime_balance
      *
      * @return self
      */

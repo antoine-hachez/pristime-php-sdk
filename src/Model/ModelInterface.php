@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk\Model
+ * @package  PristimeSdk\PristimeSdk\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package PristimePhpSdk\Model
+ * @package PristimeSdk\PristimeSdk\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

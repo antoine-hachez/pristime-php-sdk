@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * DayMetrics Class Doc Comment
  *
  * @category Class
  * @description Tracks actual time worked and contract fulfillment for a specific date.  This class contains the actual values that result from scheduling decisions, as opposed to the constraints and limits defined elsewhere. It tracks both worker-level metrics (when they worked) and contract-level metrics (how contract obligations were met).  **Key Concepts:** - **Expected Time**: Hours the worker is contracted to work (paid regardless) - **Overtime**: Hours worked beyond the expected/standard time - **Assigned Time**: Actual hours assigned to shifts - **Flextime**: Difference between contracted and actual hours (can be positive or negative) - **Active Day**: Any day where the worker has time obligations (expected or overtime)  **Usage:** Set values to None where no tracking is needed for that metric.
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

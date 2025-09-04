@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * ShiftCreationSettings Class Doc Comment
  *
  * @category Class
  * @description Configuration for automatically creating shifts to fulfill staffing demands.  When a demand cannot be fully satisfied by existing shifts, the system can automatically generate new shifts with these specifications. This is useful for:  - **Dynamic scheduling**: Create shifts on-demand based on actual staffing needs - **Gap filling**: Generate shifts to cover periods with insufficient existing coverage - **Uniform coverage**: Ensure consistent shift characteristics across time periods - **Skill-specific coverage**: Create shifts that require specific worker qualifications  **Important:** All created shifts must be compatible with the parent demand&#39;s requirements. For example, if the demand requires shifts with tag \&quot;ICU\&quot;, the shift creation settings must include \&quot;ICU\&quot; in their tags.
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,8 +61,8 @@ class ShiftCreationSettings implements ModelInterface, ArrayAccess, \JsonSeriali
     protected static $openAPITypes = [
         'timezone' => 'string',
         'break_minutes' => 'int',
-        'work_duration' => '\PristimePhpSdk\Model\WorkDuration',
-        'continuous_work_duration_before_break' => '\PristimePhpSdk\Model\ContinuousWorkDurationBeforeBreak',
+        'work_duration' => '\PristimeSdk\PristimeSdk\Model\WorkDuration',
+        'continuous_work_duration_before_break' => '\PristimeSdk\PristimeSdk\Model\ContinuousWorkDurationBeforeBreak',
         'required_skills' => 'string[]',
         'tags' => 'string[]',
         'day_boundary_offset_minutes' => 'int'
@@ -436,7 +436,7 @@ class ShiftCreationSettings implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets work_duration
      *
-     * @return \PristimePhpSdk\Model\WorkDuration
+     * @return \PristimeSdk\PristimeSdk\Model\WorkDuration
      */
     public function getWorkDuration()
     {
@@ -446,7 +446,7 @@ class ShiftCreationSettings implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets work_duration
      *
-     * @param \PristimePhpSdk\Model\WorkDuration $work_duration work_duration
+     * @param \PristimeSdk\PristimeSdk\Model\WorkDuration $work_duration work_duration
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class ShiftCreationSettings implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets continuous_work_duration_before_break
      *
-     * @return \PristimePhpSdk\Model\ContinuousWorkDurationBeforeBreak
+     * @return \PristimeSdk\PristimeSdk\Model\ContinuousWorkDurationBeforeBreak
      */
     public function getContinuousWorkDurationBeforeBreak()
     {
@@ -473,7 +473,7 @@ class ShiftCreationSettings implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets continuous_work_duration_before_break
      *
-     * @param \PristimePhpSdk\Model\ContinuousWorkDurationBeforeBreak $continuous_work_duration_before_break continuous_work_duration_before_break
+     * @param \PristimeSdk\PristimeSdk\Model\ContinuousWorkDurationBeforeBreak $continuous_work_duration_before_break continuous_work_duration_before_break
      *
      * @return self
      */

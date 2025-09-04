@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Revenue parameters used by the optimization algorithm to prioritize shift assignments.  These values influence which workers get assigned to which shifts by making some assignments more economically attractive than others. Higher revenue shifts will be prioritized for assignment, and continuity bonuses encourage keeping related shifts with the same worker.  **Note:** These are optimization weights, not actual financial amounts. They help the algorithm make better assignment decisions based on business priorities.
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

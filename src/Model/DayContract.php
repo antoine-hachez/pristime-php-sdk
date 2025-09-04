@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * DayContract Class Doc Comment
  *
  * @category Class
  * @description Complete daily contract configuration for a worker on a specific date.  This is the primary class for defining how a worker can be scheduled on any given day. It combines time constraints and cost parameters to provide a complete picture of the worker&#39;s daily contract obligations and limitations.  **Main Components:** - **Time Constraints**: Daily hour limits and requirements (min/max work time, overtime, PTO) - **Cost Parameters**: How different types of time affect optimization calculations - **Policy Settings**: Rules for combining different time types (overtime + PTO, etc.)
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class DayContract implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'time_constraints' => '\PristimePhpSdk\Model\DayTimeConstraints',
-        'allow' => '\PristimePhpSdk\Model\DayAllow',
-        'costs' => '\PristimePhpSdk\Model\DayCosts',
+        'time_constraints' => '\PristimeSdk\PristimeSdk\Model\DayTimeConstraints',
+        'allow' => '\PristimeSdk\PristimeSdk\Model\DayAllow',
+        'costs' => '\PristimeSdk\PristimeSdk\Model\DayCosts',
         'overtime_factor' => 'int'
     ];
 
@@ -315,7 +315,7 @@ class DayContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets time_constraints
      *
-     * @return \PristimePhpSdk\Model\DayTimeConstraints|null
+     * @return \PristimeSdk\PristimeSdk\Model\DayTimeConstraints|null
      */
     public function getTimeConstraints()
     {
@@ -325,7 +325,7 @@ class DayContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets time_constraints
      *
-     * @param \PristimePhpSdk\Model\DayTimeConstraints|null $time_constraints time_constraints
+     * @param \PristimeSdk\PristimeSdk\Model\DayTimeConstraints|null $time_constraints time_constraints
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class DayContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets allow
      *
-     * @return \PristimePhpSdk\Model\DayAllow|null
+     * @return \PristimeSdk\PristimeSdk\Model\DayAllow|null
      */
     public function getAllow()
     {
@@ -352,7 +352,7 @@ class DayContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets allow
      *
-     * @param \PristimePhpSdk\Model\DayAllow|null $allow allow
+     * @param \PristimeSdk\PristimeSdk\Model\DayAllow|null $allow allow
      *
      * @return self
      */
@@ -369,7 +369,7 @@ class DayContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets costs
      *
-     * @return \PristimePhpSdk\Model\DayCosts|null
+     * @return \PristimeSdk\PristimeSdk\Model\DayCosts|null
      */
     public function getCosts()
     {
@@ -379,7 +379,7 @@ class DayContract implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets costs
      *
-     * @param \PristimePhpSdk\Model\DayCosts|null $costs costs
+     * @param \PristimeSdk\PristimeSdk\Model\DayCosts|null $costs costs
      *
      * @return self
      */

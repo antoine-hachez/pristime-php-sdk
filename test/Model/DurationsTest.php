@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Complete duration summary of all scheduling changes and new shift creation.  Provides a comprehensive view of how many minutes of work were affected by the optimization, split between modifications to your existing shifts and automatic creation of new shifts to meet demands.  **Total Impact Calculation:** - Changed work &#x3D; provided.changed_assignment + provided.gained_assignment + provided.lost_assignment - New work &#x3D; created - Total optimization impact &#x3D; changed work + new work  **Usage:** - Track optimization effectiveness and coverage improvements - Calculate billing for usage-based pricing models - Estimate communication needs for schedule change notifications
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

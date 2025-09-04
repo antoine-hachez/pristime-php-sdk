@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description These metrics help you understand how much of your schedule was modified during optimization and the nature of those changes. All values are in minutes.  **Assignment Change Patterns:**  **Stability Metrics:** - kept_assignment: Shifts that kept their original worker assignments - remained_unassigned: Shifts that stayed unassigned (no available workers)  **Change Metrics:** - changed_assignment: Assigned shifts that got different workers - lost_assignment: Previously assigned shifts that became unassigned - gained_assignment: Unassigned shifts that got workers
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

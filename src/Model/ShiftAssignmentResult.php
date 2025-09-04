@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * ShiftAssignmentResult Class Doc Comment
  *
  * @category Class
  * @description Tracks worker assignment changes for a specific shift after optimization.  This class captures the before and after state of shift assignments, enabling you to understand how the optimization algorithm changed your workforce schedule. Essential for tracking schedule modifications and their impact.  **Key Information:** - Current assignment after optimization - Previous assignment before optimization - Assignment change detection (new, changed, removed, unchanged)
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

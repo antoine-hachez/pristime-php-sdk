@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Defines a worker&#39;s availability preferences and restrictions for scheduling.  Availability is used by the optimizer to respect worker preferences and constraints: - **Unavailable periods**: Hard constraints - worker cannot be assigned shifts during these times - **Preferred periods**: Soft preferences - optimizer tries to assign shifts during these times - **Unpreferred periods**: Soft constraints - optimizer avoids these times but can use them if needed  All periods use standard timing: start time included, end time excluded, whole minutes only.
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

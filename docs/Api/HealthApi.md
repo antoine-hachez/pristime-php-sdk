@@ -1,4 +1,4 @@
-# PristimePhpSdk\HealthApi
+# PristimeSdk\HealthApi
 
 All URIs are relative to https://pristime.com, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://pristime.com, except if the operation defines a
 ## `healthCheck()`
 
 ```php
-healthCheck(): \PristimePhpSdk\Model\Response
+healthCheck(): \PristimeSdk\PristimeSdk\Model\Response
 ```
 
 Read Health
@@ -23,7 +23,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new PristimePhpSdk\Api\HealthApi(
+$apiInstance = new PristimeSdk\Api\HealthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -43,7 +43,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\PristimePhpSdk\Model\Response**](../Model/Response.md)
+[**\PristimeSdk\PristimeSdk\Model\Response**](../Model/Response.md)
 
 ### Authorization
 

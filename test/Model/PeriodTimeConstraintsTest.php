@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Time constraints and limits for a worker over a specific date range (most commonly a week).  **Common Patterns:** - **40-hour work week**: contractual&#x3D;2400 (40*60), min_expected&#x3D;2400 (40*60), max_expected&#x3D;2400 (40*60), max_overtime&#x3D;600 (10 hours) - **Flexible Part-time contract**: contractual&#x3D;1200 (20 hours), min_expected&#x3D;900 (15 hours), max_expected&#x3D;1500 (25 hours), max_overtime&#x3D;300 (5 hours)  **Set to None to indicate no limit for that constraint.**
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

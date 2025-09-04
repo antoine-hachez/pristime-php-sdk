@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Complete results from workforce scheduling optimization containing all assignments, metrics, and analysis.  This is the core result object containing everything you need to understand and implement the optimized schedule. It provides the assignment decisions, performance metrics, constraint violations, and operational statistics from the optimization process.  **Key Components:**  **Schedule Results:** - shifts: All shift assignments (both your provided shifts and newly created ones) - durations: Time-based summary of schedule changes and impact
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

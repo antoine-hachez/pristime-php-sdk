@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,20 +26,20 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk;
+namespace PristimeSdk;
 
 use ArrayAccess;
 use DateTime;
 use GuzzleHttp\Psr7\Utils;
 use Psr\Http\Message\StreamInterface;
 use SplFileObject;
-use PristimePhpSdk\Model\ModelInterface;
+use PristimeSdk\PristimeSdk\Model\ModelInterface;
 
 /**
  * FormDataProcessor Class Doc Comment
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

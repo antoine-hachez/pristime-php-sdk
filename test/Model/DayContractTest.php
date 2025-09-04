@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace PristimePhpSdk\Test\Model;
+namespace PristimeSdk\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Complete daily contract configuration for a worker on a specific date.  This is the primary class for defining how a worker can be scheduled on any given day. It combines time constraints and cost parameters to provide a complete picture of the worker&#39;s daily contract obligations and limitations.  **Main Components:** - **Time Constraints**: Daily hour limits and requirements (min/max work time, overtime, PTO) - **Cost Parameters**: How different types of time affect optimization calculations - **Policy Settings**: Rules for combining different time types (overtime + PTO, etc.)
- * @package     PristimePhpSdk
+ * @package     PristimeSdk
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

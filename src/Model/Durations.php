@@ -5,7 +5,7 @@
  * PHP version 8.1
  *
  * @category Class
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace PristimePhpSdk\Model;
+namespace PristimeSdk\PristimeSdk\Model;
 
 use \ArrayAccess;
-use \PristimePhpSdk\ObjectSerializer;
+use \PristimeSdk\ObjectSerializer;
 
 /**
  * Durations Class Doc Comment
  *
  * @category Class
  * @description Complete duration summary of all scheduling changes and new shift creation.  Provides a comprehensive view of how many minutes of work were affected by the optimization, split between modifications to your existing shifts and automatic creation of new shifts to meet demands.  **Total Impact Calculation:** - Changed work &#x3D; provided.changed_assignment + provided.gained_assignment + provided.lost_assignment - New work &#x3D; created - Total optimization impact &#x3D; changed work + new work  **Usage:** - Track optimization effectiveness and coverage improvements - Calculate billing for usage-based pricing models - Estimate communication needs for schedule change notifications
- * @package  PristimePhpSdk
+ * @package  PristimeSdk
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class Durations implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'provided' => '\PristimePhpSdk\Model\ProvidedShiftsDurations',
+        'provided' => '\PristimeSdk\PristimeSdk\Model\ProvidedShiftsDurations',
         'created' => 'int'
     ];
 
@@ -307,7 +307,7 @@ class Durations implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets provided
      *
-     * @return \PristimePhpSdk\Model\ProvidedShiftsDurations
+     * @return \PristimeSdk\PristimeSdk\Model\ProvidedShiftsDurations
      */
     public function getProvided()
     {
@@ -317,7 +317,7 @@ class Durations implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets provided
      *
-     * @param \PristimePhpSdk\Model\ProvidedShiftsDurations $provided provided
+     * @param \PristimeSdk\PristimeSdk\Model\ProvidedShiftsDurations $provided provided
      *
      * @return self
      */
